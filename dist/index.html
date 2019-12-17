@@ -41,11 +41,14 @@
         </ul>
       </div>
     </div>
-
+    <div id="append"></div>
     <script id="article-template" type="text/x-handlebars-template">
+      {{#each .}}
       <div id="articleContainer">
-
+        <div>{{vertical}}</div>
+        <div>{{author}}</div>
       </div>
+      {{/each}}
     </script>
 
     <div id="footer">
