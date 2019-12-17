@@ -1,14 +1,16 @@
 const express = require('express');
 const router = express.Router();
 // const request = require('request');
+const Article = require('../model/Article');
 
 router.get('/check', function(req, res) {
   res.send('Hello World');
 });
 
 router.get('/articles/:vertical', async function(req, res) {
-  let ver = req.params.vertical;
-  let articlesArr = await Article.find({ vertical: ver });
+  let vertical = req.params.vertical;
+  let verCap = vertical.charAt(0).toUpperCase() + vertical.slice(1);
+  let articlesArr = await Article.find({ vertical: verCap });
   res.send(articlesArr);
 });
 
@@ -29,8 +31,9 @@ router.post('/articles', function(req, res) {
     word_count: article.word_count
   });
   newArticle.save().then(function(article) {
-    console.log(`${article.title} saved`);
+    console.log(`${article.vertical} saved`);
   });
   res.end();
 });
+
 module.exports = router;
