@@ -4,6 +4,9 @@ const puppeteer = require('puppeteer')
 
 
 const pageScraper = async (articleUrl, magazine) => {
+
+  console.log(`opening headless chrome to scrap page`)
+
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(articleUrl);
@@ -16,19 +19,18 @@ const pageScraper = async (articleUrl, magazine) => {
     let date
     let bodyFull
     let bodyClean
+    let content
     
     if (magazine == 'cnn') {
       //let test = $('.zn-body__paragraph.speakable')
-      let test = $('.zn-body__paragraph')
-
+      content = $('.zn-body__paragraph').text()
       topicTest = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container").text()
-
       topic = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > h1").text()
       author = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > div.metadata > div.metadata__info.js-byline-images > p.metadata__byline > span").text()
       date = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > div.metadata > div.metadata__info.js-byline-images > p.update-time").text()
       //bodyFull = $("#body-text > div.l-container").html()
       //$ = cheerio.load(bodyFull)
-      $('body > div.zn-body__read-all .el__leafmedia.el__leafmedia--twitter').remove()
+      //$('body > div.zn-body__read-all .el__leafmedia.el__leafmedia--twitter').remove()
       bodyClean = $.html()
     }
 
@@ -42,9 +44,9 @@ const pageScraper = async (articleUrl, magazine) => {
           $('body > div.tpContainer').remove()
 
           if ($.html()) {
-              bodyClean = $.html()
+            content = $.html()
           }else{
-            bodyClean = bodyFull
+            content = bodyFull
           }
           
         }
@@ -54,7 +56,7 @@ const pageScraper = async (articleUrl, magazine) => {
         vertical: 'sport',
         topic: "",
         author: author,
-        content: bodyClean,
+        content: content,
         date_published: date,
         domain: "",
         description: "",

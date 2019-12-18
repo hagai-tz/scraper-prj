@@ -6,6 +6,8 @@ const articleUrlArray = []
 
 const linksScrapper = async function(sportSource){
 
+    console.log(`opening headless chrome to scrap links`)
+
     const browser = await puppeteer.launch()
     const page = await browser.newPage()
     await page.goto(sportSource.sportUrl, { waitUntil: 'networkidle2' })
