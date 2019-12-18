@@ -75,14 +75,12 @@ router.post('/newsapi', async function(req, res){
   })
 })
 
+// Yoni's function 
 
-router.get('/mc-article', async function (req, res) {
-  const MCurl = req.query.MCurl
-  console.log(MCurl)
-  let article = await Mercury.parse(MCurl, { contentType: 'Markdown' })
-  console.log(article.content)
+setInterval(() => {
+  
+}, interval);
 
-})
 
 
 module.exports = router
