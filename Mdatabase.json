@@ -1,143 +1,140 @@
-{
-    "_id": {
-      "$oid": "5dfa7235741951288a30ee84"
-    },
-    "article_img_arr": [],
-    "vertical": "business",
-    "topic": null,
-    "date_published": {
-      "$date": "2019-12-18T15:52:50.000Z"
-    },
+({
+  "_id": {
+    "$oid": "5dfa7235741951288a30ee84"
+  },
+  "article_img_arr": [],
+  "vertical": "business",
+  "topic": null,
+  "date_published": {
+    "$date": "2019-12-18T15:52:50.000Z"
+  },
+  "author": "Colin Lecher",
+  "title": "Labor board rolls back employee email rights after Google recommendation - The Verge",
+  "domain": "The Verge",
+  "discription": "The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for.",
+  "lead_image_url": "https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg",
+  "url": "https://www.theverge.com/2019/12/18/21028033/google-labor-board-employee-email-block-organizing",
+  "content": {
+    "title": "Labor board rolls back employee email rights after Google recommendation",
+    "content": "<div><div><figure class=\"e-image e-image--hero\">\n  <span class=\"e-image__inner\">\n    \n    <span class=\"e-image__image \">\n      \n        <picture class=\"c-picture\">\n  \n\n\n  <source srcset=\"https://cdn.vox-cdn.com/thumbor/eQ8ksgLplmBoN_KzA1hNwHO4hJQ=/0x0:2040x1360/320x213/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 320w, https://cdn.vox-cdn.com/thumbor/ClfZGG-KKm4Od0-GWPDG2TRYPtE=/0x0:2040x1360/620x413/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 620w, https://cdn.vox-cdn.com/thumbor/dui9vMnhmSr6JrzgyPAZNljMsP8=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 920w, https://cdn.vox-cdn.com/thumbor/YEJ0nhHBQ-PP5-EnMwqJe3_Gzg0=/0x0:2040x1360/1220x813/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1220w, https://cdn.vox-cdn.com/thumbor/-tzNIyO6O68DE4x3t0zZzBKA4CM=/0x0:2040x1360/1520x1013/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1520w, https://cdn.vox-cdn.com/thumbor/RE0f6Vgi-zWnOqNATTN55q-u2aM=/0x0:2040x1360/1820x1213/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1820w, https://cdn.vox-cdn.com/thumbor/ppx-zYruQPQejBpkoouSmVrxb7I=/0x0:2040x1360/2120x1413/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 2120w, https://cdn.vox-cdn.com/thumbor/VeGMC0T_Nu2OjKfZLJVoGYG1hHg=/0x0:2040x1360/2420x1613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 2420w\" sizes=\"(min-width: 1221px) 846px, (min-width: 880px) calc(100vw - 334px), 100vw\" type=\"image/webp\">\n\n\n<img srcset=\"https://cdn.vox-cdn.com/thumbor/jNZ2nA5nrV5832UJ-Abl8RCS7fs=/0x0:2040x1360/320x213/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 320w, https://cdn.vox-cdn.com/thumbor/mdtOPHFY4TKm1ljk8JVMDtmB5eE=/0x0:2040x1360/620x413/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 620w, https://cdn.vox-cdn.com/thumbor/IvDQDPU_xbTCsmtAuMbAvyZzC9M=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 920w, https://cdn.vox-cdn.com/thumbor/mmB0klmJqB679pHub54k6PFPfEs=/0x0:2040x1360/1220x813/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1220w, https://cdn.vox-cdn.com/thumbor/Ys69S2VB0VgAJMH28vTBIf8aLc4=/0x0:2040x1360/1520x1013/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1520w, https://cdn.vox-cdn.com/thumbor/YRKDbd5gMM0hYzKS2_-6f0kPyn4=/0x0:2040x1360/1820x1213/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1820w, https://cdn.vox-cdn.com/thumbor/AuXqzHZkkfY1APiKuc14ARXLWe4=/0x0:2040x1360/2120x1413/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 2120w, https://cdn.vox-cdn.com/thumbor/aLwUI41CAA9oMWRSoR0oxPrJ2gM=/0x0:2040x1360/2420x1613/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 2420w\" sizes=\"(min-width: 1221px) 846px, (min-width: 880px) calc(100vw - 334px), 100vw\" alt src=\"https://cdn.vox-cdn.com/thumbor/q-HykaAZUG9bXkfFsemOrDowszQ=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg\">\n\n</picture>\n\n      \n    </span>\n    \n  </span>\n  \n    <span class=\"e-image__meta\">\n      \n      \n        <cite>Illustration by Alex Castro / The Verge</cite>\n      \n    </span>\n  \n</figure><div class=\"c-entry-content \">\n  <p id=\"Kf02bn\">The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for. </p>\n<p id=\"IUaxUd\">The National Labor Relations Board said in the 3&#x2013;1 decision that &#x201C;employees have no statutory right to use employer equipment, including IT resources,&#x201D; for union activity, giving management leeway to ban organizing on their work email systems. The decision undoes a previous ruling from the board decided under the Obama administration, which gave workers more latitude to use their work email for legally protected labor activity.</p>\n<div class=\"c-float-right\"><aside id=\"z4q7VU\"><q>&#x201C;employees have no statutory right to use employer equipment.&#x201D;</q></aside></div>\n<p id=\"UUWp5E\">The decision, which was based on a Las Vegas casino&#x2019;s email policy, was recommended by attorneys for Google in cases brought to the labor board. As <a href=\"https://www.bloomberg.com/news/articles/2019-01-24/google-urged-the-u-s-to-limit-protection-for-activist-workers\"><em>Bloomberg </em>reported earlier this year</a>, Google told the board that the Obama-era standard &#x201C;should be overruled&#x201D; and a broader, pro-employer ruling reinstated. A Google spokesperson told the outlet at the time that the company was &#x201C;not lobbying for changes to any rules&#x201D; and included the position as one point in a wider legal defense against claims the company considered meritless. </p>\n<p id=\"c4EA7m\">Google has been roiled by employee activism in the past two years, and much of the work has been organized internally, with Googlers posting on internal message boards about protests. But the ruling will have effects well beyond any one company.</p>\n<p id=\"ZwlyZX\">The lone dissenting labor board vote on this week&#x2019;s ruling said the NLRB &#x201C;aims to turn back the clock on the ability of employees to communicate with each other at work.&#x201D;</p>\n\n\n</div></div></div>",
     "author": "Colin Lecher",
-    "title": "Labor board rolls back employee email rights after Google recommendation - The Verge",
-    "domain": "The Verge",
-    "discription": "The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for.",
+    "date_published": "2019-12-18T15:52:50.000Z",
     "lead_image_url": "https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg",
+    "dek": null,
+    "next_page_url": null,
     "url": "https://www.theverge.com/2019/12/18/21028033/google-labor-board-employee-email-block-organizing",
-    "content": {
-      "title": "Labor board rolls back employee email rights after Google recommendation",
-      "content": "<div><div><figure class=\"e-image e-image--hero\">\n  <span class=\"e-image__inner\">\n    \n    <span class=\"e-image__image \">\n      \n        <picture class=\"c-picture\">\n  \n\n\n  <source srcset=\"https://cdn.vox-cdn.com/thumbor/eQ8ksgLplmBoN_KzA1hNwHO4hJQ=/0x0:2040x1360/320x213/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 320w, https://cdn.vox-cdn.com/thumbor/ClfZGG-KKm4Od0-GWPDG2TRYPtE=/0x0:2040x1360/620x413/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 620w, https://cdn.vox-cdn.com/thumbor/dui9vMnhmSr6JrzgyPAZNljMsP8=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 920w, https://cdn.vox-cdn.com/thumbor/YEJ0nhHBQ-PP5-EnMwqJe3_Gzg0=/0x0:2040x1360/1220x813/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1220w, https://cdn.vox-cdn.com/thumbor/-tzNIyO6O68DE4x3t0zZzBKA4CM=/0x0:2040x1360/1520x1013/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1520w, https://cdn.vox-cdn.com/thumbor/RE0f6Vgi-zWnOqNATTN55q-u2aM=/0x0:2040x1360/1820x1213/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1820w, https://cdn.vox-cdn.com/thumbor/ppx-zYruQPQejBpkoouSmVrxb7I=/0x0:2040x1360/2120x1413/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 2120w, https://cdn.vox-cdn.com/thumbor/VeGMC0T_Nu2OjKfZLJVoGYG1hHg=/0x0:2040x1360/2420x1613/filters:focal(857x517:1183x843):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 2420w\" sizes=\"(min-width: 1221px) 846px, (min-width: 880px) calc(100vw - 334px), 100vw\" type=\"image/webp\">\n\n\n<img srcset=\"https://cdn.vox-cdn.com/thumbor/jNZ2nA5nrV5832UJ-Abl8RCS7fs=/0x0:2040x1360/320x213/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 320w, https://cdn.vox-cdn.com/thumbor/mdtOPHFY4TKm1ljk8JVMDtmB5eE=/0x0:2040x1360/620x413/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 620w, https://cdn.vox-cdn.com/thumbor/IvDQDPU_xbTCsmtAuMbAvyZzC9M=/0x0:2040x1360/920x613/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 920w, https://cdn.vox-cdn.com/thumbor/mmB0klmJqB679pHub54k6PFPfEs=/0x0:2040x1360/1220x813/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1220w, https://cdn.vox-cdn.com/thumbor/Ys69S2VB0VgAJMH28vTBIf8aLc4=/0x0:2040x1360/1520x1013/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1520w, https://cdn.vox-cdn.com/thumbor/YRKDbd5gMM0hYzKS2_-6f0kPyn4=/0x0:2040x1360/1820x1213/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 1820w, https://cdn.vox-cdn.com/thumbor/AuXqzHZkkfY1APiKuc14ARXLWe4=/0x0:2040x1360/2120x1413/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 2120w, https://cdn.vox-cdn.com/thumbor/aLwUI41CAA9oMWRSoR0oxPrJ2gM=/0x0:2040x1360/2420x1613/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg 2420w\" sizes=\"(min-width: 1221px) 846px, (min-width: 880px) calc(100vw - 334px), 100vw\" alt src=\"https://cdn.vox-cdn.com/thumbor/q-HykaAZUG9bXkfFsemOrDowszQ=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/65931267/acastro_180508_1777_google_IO_0003.0.jpg\">\n\n</picture>\n\n      \n    </span>\n    \n  </span>\n  \n    <span class=\"e-image__meta\">\n      \n      \n        <cite>Illustration by Alex Castro / The Verge</cite>\n      \n    </span>\n  \n</figure><div class=\"c-entry-content \">\n  <p id=\"Kf02bn\">The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for. </p>\n<p id=\"IUaxUd\">The National Labor Relations Board said in the 3&#x2013;1 decision that &#x201C;employees have no statutory right to use employer equipment, including IT resources,&#x201D; for union activity, giving management leeway to ban organizing on their work email systems. The decision undoes a previous ruling from the board decided under the Obama administration, which gave workers more latitude to use their work email for legally protected labor activity.</p>\n<div class=\"c-float-right\"><aside id=\"z4q7VU\"><q>&#x201C;employees have no statutory right to use employer equipment.&#x201D;</q></aside></div>\n<p id=\"UUWp5E\">The decision, which was based on a Las Vegas casino&#x2019;s email policy, was recommended by attorneys for Google in cases brought to the labor board. As <a href=\"https://www.bloomberg.com/news/articles/2019-01-24/google-urged-the-u-s-to-limit-protection-for-activist-workers\"><em>Bloomberg </em>reported earlier this year</a>, Google told the board that the Obama-era standard &#x201C;should be overruled&#x201D; and a broader, pro-employer ruling reinstated. A Google spokesperson told the outlet at the time that the company was &#x201C;not lobbying for changes to any rules&#x201D; and included the position as one point in a wider legal defense against claims the company considered meritless. </p>\n<p id=\"c4EA7m\">Google has been roiled by employee activism in the past two years, and much of the work has been organized internally, with Googlers posting on internal message boards about protests. But the ruling will have effects well beyond any one company.</p>\n<p id=\"ZwlyZX\">The lone dissenting labor board vote on this week&#x2019;s ruling said the NLRB &#x201C;aims to turn back the clock on the ability of employees to communicate with each other at work.&#x201D;</p>\n\n\n</div></div></div>",
-      "author": "Colin Lecher",
-      "date_published": "2019-12-18T15:52:50.000Z",
-      "lead_image_url": "https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg",
-      "dek": null,
-      "next_page_url": null,
-      "url": "https://www.theverge.com/2019/12/18/21028033/google-labor-board-employee-email-block-organizing",
-      "domain": "www.theverge.com",
-      "excerpt": "Employers have broad rights to ban email use.",
-      "word_count": 267,
-      "direction": "ltr",
-      "total_pages": 1,
-      "rendered_pages": 1
-    },
-    "word_count": null,
-    "__v": 0
+    "domain": "www.theverge.com",
+    "excerpt": "Employers have broad rights to ban email use.",
+    "word_count": 267,
+    "direction": "ltr",
+    "total_pages": 1,
+    "rendered_pages": 1
   },
-
-  {
-    "_id": {
-      "$oid": "5dfa7236741951288a30ee8b"
-    },
-    "article_img_arr": [],
-    "vertical": "business",
-    "topic": null,
-    "date_published": {
-      "$date": "2019-12-18T13:30:50.000Z"
-    },
-    "author": "Express Web Desk",
-    "title": "Cyrus Mistry on being restored as Tata Sons chairman: Today’s judgment is victory of principles of good governance - The Indian Express",
-    "domain": "Indianexpress.com",
-    "discription": "Mistry said the tribunal's decision is a victory for the principles of good governance and minority shareholder rights.",
+  "word_count": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "5dfa7236741951288a30ee8b"
+  },
+  "article_img_arr": [],
+  "vertical": "business",
+  "topic": null,
+  "date_published": {
+    "$date": "2019-12-18T13:30:50.000Z"
+  },
+  "author": "Express Web Desk",
+  "title": "Cyrus Mistry on being restored as Tata Sons chairman: Today’s judgment is victory of principles of good governance - The Indian Express",
+  "domain": "Indianexpress.com",
+  "discription": "Mistry said the tribunal's decision is a victory for the principles of good governance and minority shareholder rights.",
+  "lead_image_url": "https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?w=759",
+  "url": "https://indianexpress.com/article/business/companies/todays-judgment-is-victory-of-principles-of-good-governance-cyrus-mistry-nclat-order-tata-sons-6173617/",
+  "content": {
+    "title": "Cyrus Mistry on being restored as Tata Sons chairman: Today’s judgment is victory of principles of good governance",
+    "author": null,
+    "date_published": "2019-12-18T14:00:50.000Z",
+    "dek": null,
     "lead_image_url": "https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?w=759",
+    "content": "<div class=\"full-details\"> <div class=\"editor\" id=\"storycenterbyline\">By: <a href=\"/agency/express-web-desk/\">Express Web Desk</a> | New Delhi | <span> Updated: December 18, 2019 7:30:50 pm </span> </div> <span> <meta> <meta> <meta> </span><span class=\"custom-caption\"><img class=\"wp-image-4420558 size-full\" src=\"https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg\" alt=\"Cyrus Mistry on being restored as Tata Sons chairman: Today&apos;s judgment is victory of principles of good governance\" srcset=\"https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg 759w, https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?resize=450,250 450w, https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?resize=600,334 600w, https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?resize=728,405 728w, https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?resize=150,83 150w\"> Mistry was removed as Chairman of Tata Sons in October 2016. (File)</span>\n<p>Hours after the National Company Law Appellate Tribunal (NCLAT) <a href=\"https://indianexpress.com/article/business/companies/cyrus-mistry-restored-as-tata-sons-chairman-by-nclat-6173344/\"><strong>restored him as executive chairman of Tata Sons</strong> </a>Wednesday, Cyrus Mistry said this isn&#x2019;t a personal victory for him and rather a vindication of his stand. He said the tribunal&#x2019;s decision is a victory for the principles of good governance and minority shareholder rights.</p>\n<p>&#x201C;Today&#x2019;s judgment isn&#x2019;t a personal victory for me, but is a victory for the principles of good governance and minority shareholder rights. The outcome of the appeal is a vindication of my stand,&#x201D; he said in a statement.</p>\n<span class=\"embed-youtube\"><iframe class=\"youtube-player\" type=\"text/html\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/BQD8uWxeJVw?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent\"></iframe></span>\n<p>Seeking to bury the past bitterness, Mistry in a statement said that it was now time that &#x201C;all of us work together for sustainable growth and development of the Tata Group, an institution that we all cherish.&#x201D;</p>\n<p>He added that for over 50 years, the Mistry family, as the significant minority shareholder of Tata Sons, has always endeavoured to play the role of a responsible guardian of an institution that the entire nation is proud of.</p>\n<p>&#x201C;For the Tata Group to prosper as an institution, it is important that the management of individual companies, their Boards, the management of Tata Sons, the Board of Tata Sons and the shareholders of Tata Sons, all work harmoniously within a robust governance framework, that in substance and form, protects the rights of all stakeholders, including shareholders, investors and the Tata Groups employees, who represent the strongest asset of the Group,&#x201D; Mistry was quoted as saying by news agency PTI.</p>\n<p><strong>ALSO READ | <a href=\"https://indianexpress.com/article/business/companies/cyrus-mistrys-sacking-nclat-restoring-him-executive-chairman-tata-sons-timeline-ratan-tata-6173531/\">From Cyrus Mistry&#x2019;s sacking to NCLAT restoring him as Tata Sons head: A chronology of events</a></strong></p>\n<p>He further said, &#x201C;My endeavour as Executive Chairman had always been to establish a culture and processes that promote effective board governance to create long term stakeholder value, sustainable profits and growth.&#x201D;</p>\n<p>In a major development in the Tata Sons-Cyrus Mistry case, the NCLAT also held the appointment of N Chandrasekaran as the Executive Chairman of the group as illegal.</p>\n<p>The NCLAT, however, stayed the operation of the order with respect to reinstatement for four weeks to allow Tatas to appeal before the Supreme Court, which has appellate jurisdiction over the NCLAT.</p>\n<p>The news broke during the fag end of market hours on Wednesday. Shares of key Tata group companies &#x2013; Tata Motors slipped 3.05 per cent to Rs 174.70 on the BSE, while that of Tata Consultancy Services (TCS) ended 0.07 per cent higher at Rs 2,167.25 and Tata Steel settled 1.16 per cent higher at Rs 444.60 on Wednesday.</p>\n<p>Earlier this year in January, Cyrus Investments &#x2013; is the investment firm of Shapoorji Pallonji (SP) Group, had contended to the tribunal that Cyrus Mistry was removed as the chairman of Tata Sons <a href=\"https://indianexpress.com/article/business/companies/cyrus-investments-to-nclat-tata-sons-board-removed-mistry-just-like-that-5529382/\">against the company&#x2019;s Articles of Association (AoA).</a></p>\n<p>Cyrus Investments had also urged for the modification in Tata Sons&#x2019; AoA, particularly Article 75, which empowers it to ask minority shareholders to transfer their shares.</p>\n<p>The SP Group had also earlier requested the NCLAT to order amending Article 121 of the Tata Group&#x2019;s Articles of Association, alleging that the article was helping Dorabji Tata Trust and Ratan Tata Trust, part of the Tata Trust, to govern the whole Group even as they are the minority shareholders.</p>\n<p>Mistry was removed as Chairman of Tata Sons in October 2016. He was the sixth chairman of Tata Sons and had taken over in 2012 after Ratan Tata. He was later also removed as a director on board of Tata Sons.</p>\n<p>Mistry, whose family owns 18.4 per cent stake in Tata Sons, had challenged his removal in the National Company Law Tribunal (NCLT).</p>\n<p><em>-With inputs from PTI</em></p> <p class=\"appstext\">For all the latest <a href=\"https://indianexpress.com/section/business/\">Business News</a>, download <a href=\"https://play.google.com/store/apps/details?id=com.indianexpress.android&amp;hl=en\">Indian Express App</a></p> <p class=\"storytags\"> <ul> <li>Tags:</li> <li> <a href=\"https://indianexpress.com/about/cyrus-mistry/\">Cyrus Mistry</a> </li> <li> <a href=\"https://indianexpress.com/about/nclat/\">NCLAT</a> </li> <li> <a href=\"https://indianexpress.com/about/tata-sons/\">Tata Sons</a> </li> </ul> </p> </div>",
+    "next_page_url": null,
     "url": "https://indianexpress.com/article/business/companies/todays-judgment-is-victory-of-principles-of-good-governance-cyrus-mistry-nclat-order-tata-sons-6173617/",
-    "content": {
-      "title": "Cyrus Mistry on being restored as Tata Sons chairman: Today’s judgment is victory of principles of good governance",
-      "author": null,
-      "date_published": "2019-12-18T14:00:50.000Z",
-      "dek": null,
-      "lead_image_url": "https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?w=759",
-      "content": "<div class=\"full-details\"> <div class=\"editor\" id=\"storycenterbyline\">By: <a href=\"/agency/express-web-desk/\">Express Web Desk</a> | New Delhi | <span> Updated: December 18, 2019 7:30:50 pm </span> </div> <span> <meta> <meta> <meta> </span><span class=\"custom-caption\"><img class=\"wp-image-4420558 size-full\" src=\"https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg\" alt=\"Cyrus Mistry on being restored as Tata Sons chairman: Today&apos;s judgment is victory of principles of good governance\" srcset=\"https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg 759w, https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?resize=450,250 450w, https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?resize=600,334 600w, https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?resize=728,405 728w, https://images.indianexpress.com/2016/12/cyrus-mistry-759.jpg?resize=150,83 150w\"> Mistry was removed as Chairman of Tata Sons in October 2016. (File)</span>\n<p>Hours after the National Company Law Appellate Tribunal (NCLAT) <a href=\"https://indianexpress.com/article/business/companies/cyrus-mistry-restored-as-tata-sons-chairman-by-nclat-6173344/\"><strong>restored him as executive chairman of Tata Sons</strong> </a>Wednesday, Cyrus Mistry said this isn&#x2019;t a personal victory for him and rather a vindication of his stand. He said the tribunal&#x2019;s decision is a victory for the principles of good governance and minority shareholder rights.</p>\n<p>&#x201C;Today&#x2019;s judgment isn&#x2019;t a personal victory for me, but is a victory for the principles of good governance and minority shareholder rights. The outcome of the appeal is a vindication of my stand,&#x201D; he said in a statement.</p>\n<span class=\"embed-youtube\"><iframe class=\"youtube-player\" type=\"text/html\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/BQD8uWxeJVw?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent\"></iframe></span>\n<p>Seeking to bury the past bitterness, Mistry in a statement said that it was now time that &#x201C;all of us work together for sustainable growth and development of the Tata Group, an institution that we all cherish.&#x201D;</p>\n<p>He added that for over 50 years, the Mistry family, as the significant minority shareholder of Tata Sons, has always endeavoured to play the role of a responsible guardian of an institution that the entire nation is proud of.</p>\n<p>&#x201C;For the Tata Group to prosper as an institution, it is important that the management of individual companies, their Boards, the management of Tata Sons, the Board of Tata Sons and the shareholders of Tata Sons, all work harmoniously within a robust governance framework, that in substance and form, protects the rights of all stakeholders, including shareholders, investors and the Tata Groups employees, who represent the strongest asset of the Group,&#x201D; Mistry was quoted as saying by news agency PTI.</p>\n<p><strong>ALSO READ | <a href=\"https://indianexpress.com/article/business/companies/cyrus-mistrys-sacking-nclat-restoring-him-executive-chairman-tata-sons-timeline-ratan-tata-6173531/\">From Cyrus Mistry&#x2019;s sacking to NCLAT restoring him as Tata Sons head: A chronology of events</a></strong></p>\n<p>He further said, &#x201C;My endeavour as Executive Chairman had always been to establish a culture and processes that promote effective board governance to create long term stakeholder value, sustainable profits and growth.&#x201D;</p>\n<p>In a major development in the Tata Sons-Cyrus Mistry case, the NCLAT also held the appointment of N Chandrasekaran as the Executive Chairman of the group as illegal.</p>\n<p>The NCLAT, however, stayed the operation of the order with respect to reinstatement for four weeks to allow Tatas to appeal before the Supreme Court, which has appellate jurisdiction over the NCLAT.</p>\n<p>The news broke during the fag end of market hours on Wednesday. Shares of key Tata group companies &#x2013; Tata Motors slipped 3.05 per cent to Rs 174.70 on the BSE, while that of Tata Consultancy Services (TCS) ended 0.07 per cent higher at Rs 2,167.25 and Tata Steel settled 1.16 per cent higher at Rs 444.60 on Wednesday.</p>\n<p>Earlier this year in January, Cyrus Investments &#x2013; is the investment firm of Shapoorji Pallonji (SP) Group, had contended to the tribunal that Cyrus Mistry was removed as the chairman of Tata Sons <a href=\"https://indianexpress.com/article/business/companies/cyrus-investments-to-nclat-tata-sons-board-removed-mistry-just-like-that-5529382/\">against the company&#x2019;s Articles of Association (AoA).</a></p>\n<p>Cyrus Investments had also urged for the modification in Tata Sons&#x2019; AoA, particularly Article 75, which empowers it to ask minority shareholders to transfer their shares.</p>\n<p>The SP Group had also earlier requested the NCLAT to order amending Article 121 of the Tata Group&#x2019;s Articles of Association, alleging that the article was helping Dorabji Tata Trust and Ratan Tata Trust, part of the Tata Trust, to govern the whole Group even as they are the minority shareholders.</p>\n<p>Mistry was removed as Chairman of Tata Sons in October 2016. He was the sixth chairman of Tata Sons and had taken over in 2012 after Ratan Tata. He was later also removed as a director on board of Tata Sons.</p>\n<p>Mistry, whose family owns 18.4 per cent stake in Tata Sons, had challenged his removal in the National Company Law Tribunal (NCLT).</p>\n<p><em>-With inputs from PTI</em></p> <p class=\"appstext\">For all the latest <a href=\"https://indianexpress.com/section/business/\">Business News</a>, download <a href=\"https://play.google.com/store/apps/details?id=com.indianexpress.android&amp;hl=en\">Indian Express App</a></p> <p class=\"storytags\"> <ul> <li>Tags:</li> <li> <a href=\"https://indianexpress.com/about/cyrus-mistry/\">Cyrus Mistry</a> </li> <li> <a href=\"https://indianexpress.com/about/nclat/\">NCLAT</a> </li> <li> <a href=\"https://indianexpress.com/about/tata-sons/\">Tata Sons</a> </li> </ul> </p> </div>",
-      "next_page_url": null,
-      "url": "https://indianexpress.com/article/business/companies/todays-judgment-is-victory-of-principles-of-good-governance-cyrus-mistry-nclat-order-tata-sons-6173617/",
-      "domain": "indianexpress.com",
-      "excerpt": "Mistry said the tribunal's decision is a victory for the principles of good governance and minority shareholder rights.",
-      "word_count": 643,
-      "direction": "ltr",
-      "total_pages": 1,
-      "rendered_pages": 1
-    },
-    "word_count": null,
-    "__v": 0
+    "domain": "indianexpress.com",
+    "excerpt": "Mistry said the tribunal's decision is a victory for the principles of good governance and minority shareholder rights.",
+    "word_count": 643,
+    "direction": "ltr",
+    "total_pages": 1,
+    "rendered_pages": 1
   },
-
-  {
-    "_id": {
-      "$oid": "5dfa7236741951288a30ee8d"
-    },
-    "article_img_arr": [],
-    "vertical": "business",
-    "topic": null,
-    "date_published": {
-      "$date": "2019-12-18T15:08:00.000Z"
-    },
-    "author": "Todd Spangler, Todd Spangler",
-    "title": "Disney Plus Signed Up 24 Million U.S. Subscribers in November and Took Bite Out of Netflix, Analysts Estimate - Variety",
-    "domain": "Variety.com",
-    "discription": "Disney Plus had snagged an estimated 24 million U.S. subscribers as of the end of November — and the strong debut for the Mouse House’s new streaming package boosted cancellations among…",
+  "word_count": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "5dfa7236741951288a30ee8d"
+  },
+  "article_img_arr": [],
+  "vertical": "business",
+  "topic": null,
+  "date_published": {
+    "$date": "2019-12-18T15:08:00.000Z"
+  },
+  "author": "Todd Spangler, Todd Spangler",
+  "title": "Disney Plus Signed Up 24 Million U.S. Subscribers in November and Took Bite Out of Netflix, Analysts Estimate - Variety",
+  "domain": "Variety.com",
+  "discription": "Disney Plus had snagged an estimated 24 million U.S. subscribers as of the end of November — and the strong debut for the Mouse House’s new streaming package boosted cancellations among…",
+  "lead_image_url": "https://pmcvariety.files.wordpress.com/2019/12/disney-plus-tablet.png?w=700&h=393&crop=1",
+  "url": "https://variety.com/2019/digital/news/disney-plus-24-million-us-subscribers-netflix-q4-churn-1203447210/",
+  "content": {
+    "title": "Disney Plus Signed Up 24 Million U.S. Subscribers in November and Took Bite Out of Netflix, Analysts Estimate",
+    "author": null,
+    "date_published": "2019-12-18T15:08:45.000Z",
+    "dek": null,
     "lead_image_url": "https://pmcvariety.files.wordpress.com/2019/12/disney-plus-tablet.png?w=700&h=393&crop=1",
+    "content": "<article class=\"c-content\"> <p><a href=\"https://variety.com/t/disney/\" id=\"auto-tag_disney\">Disney</a> Plus had snagged an estimated 24 million U.S. subscribers as of the end of November &#x2014; and the strong debut for the Mouse House&#x2019;s new streaming package boosted cancellations among <a href=\"https://variety.com/t/netflix/\" id=\"auto-tag_netflix\">Netflix</a> customers, according to a new Wall Street analysis.</p>\n<p>The estimates come from the research team at Cowen &amp; Co., based on a census-weighted survey of 2,500 U.S. consumers conducted last month. Per the survey, 21% of total respondents said they signed up for <a href=\"https://variety.com/t/disney-plus/\" id=\"auto-tag_disney-plus\">Disney Plus</a> in November, suggesting the 24 million customer base exiting the month. That would blow away previous Wall Street forecasts for <a href=\"https://variety.com/2019/digital/features/youtube-facebook-ad-supported-video-originals-strategy-1203440823/\" id=\"related_article_link_disney\">Disney</a> Plus, which had pegged less than 20 million subs worldwide for 2020 even after factoring in expected lift from the <a href=\"https://variety.com/2019/digital/news/disney-plus-already-signed-up-verizon-free-unlimited-wireless-customers-1203379631/\">one-year-free offer from Verizon for certain customers</a>.</p>\n<p>While some research has indicated <a href=\"https://variety.com/2019/digital/news/disney-plus-22-million-mobile-app-downloads-1203432731/\">Disney Plus has had minimal impact on Netflix</a>, Cowen &amp; Co. estimated that <a href=\"https://variety.com/2019/tv/news/mandalorian-episode-7-questions-baby-yoda-1203446445/\" id=\"related_article_link_disney-plus\">Disney Plus</a> will result in about 1 million additional U.S. <a href=\"https://variety.com/2019/tv/reviews/soundtrack-netflix-review-musical-1203447344/\" id=\"related_article_link_netflix\">Netflix</a> customers cancelling service for the fourth quarter of 2019. All told, about 5.1 million Netflix subs in the States will bail in Q4, but the higher churn &#x201C;appears manageable&#x201D; for Netflix, Cowen analysts led by John Blackledge said in the report issued Wednesday.</p> <p>&#x201C;The incremental churn uptick [for Netflix] appears reasonable given the Disney+ launch, which has been highly publicized and includes various marketing programs, including a Verizon promotion that offers Disney+ for free for one year,&#x201D; the analysts wrote.</p>\n<p>For Q4 2019, <a href=\"https://variety.com/2019/digital/news/netflix-q3-2019-earnings-subscriber-growth-1203373186/\">Netflix forecast 7.6 million global paid net adds</a>, comprising 600,000 in the U.S. and 7.0 million for the international segment. Cowen&#x2019;s current estimates put Netflix net adds for the current quarter at 500,000. The analysts pointed to Netflix&#x2019;s &#x201C;strong&#x201D; content slate for Q4 as helping minimize the blow from Disney Plus, including high-profile originals like &#x201C;The Irishman,&#x201D; &#x201C;Marriage Story,&#x201D; &#x201C;6 Underground,&#x201D; &#x201C;The Two Popes&#x201D; and &#x201C;The Crown&#x201D; Season 3.</p>\n<p>Meanwhile, it&#x2019;s worth noting that a large swath of Disney Plus users in the U.S. are currently not paying for the service.</p>\n<p>About one-third (34%) of Disney Plus&#x2019; U.S. customers &#x2014; or 8 million as of the end of November &#x2014; are on <a href=\"https://variety.com/2019/digital/news/disney-plus-already-signed-up-verizon-free-unlimited-wireless-customers-1203379631/\">one-year-free offer from Verizon for certain customers</a>, while the remaining 66% are on paid plans, Cowen&#x2019;s analysts estimated. It&#x2019;s possible Disney Plus could see a tsunami of churn once the Verizon freebie deals roll off in late 2020. In addition, the Cowen survey data indicated there were about 19.4 million consumers who subscribe to both Netflix and Disney Plus, implying an 80% overlap between the services.</p>\n<p>Disney last month said <a href=\"https://variety.com/2019/digital/news/disney-says-disney-plus-has-over-10-million-signups-1203403515/\">over 10 million users had signed up for Disney Plus</a> as of Nov. 13 (the day after launch). The company said it doesn&#x2019;t plan to release any additional Disney Plus subscriber data outside of quarterly earnings calls.</p>\n<p>Netflix&#x2019;s subscriber growth in the U.S. &#x2014; its most mature market &#x2014; has slowed in recent quarters. The streamer this week <a href=\"https://variety.com/2019/digital/news/netflix-breaks-down-results-by-region-showing-strong-asia-pacific-europe-growth-1203440307/\">released its first breakdown of the international business by region</a>, showing strong growth and potential upside in Asia-Pacific especially. Netflix&#x2019;s penetration in Latin America is higher than Wall Street previously believed, with 29.4 million customers in the region (30% of its international base) as of the end of Q3.</p> <p>With big new rivals coming to market, Netflix has sought to reassure investors it can weather the storm. &#x201C;Many are focused on the &#x2018;streaming wars,&#x2019; but we&#x2019;ve been competing with streamers (Amazon, YouTube, Hulu) as well as linear TV for over a decade,&#x201D; the company wrote in its <a href=\"https://variety.com/2019/biz/news/netflix-competition-hulu-disney-plus-apple-plus-1203373259/\">Oct. 16 letter to shareholders</a>. &#x201C;The upcoming arrival of services like Disney+, Apple TV+, HBO Max, and Peacock is increased competition, but we are all small compared to linear TV.&#x201D;</p> </article>",
+    "next_page_url": null,
     "url": "https://variety.com/2019/digital/news/disney-plus-24-million-us-subscribers-netflix-q4-churn-1203447210/",
-    "content": {
-      "title": "Disney Plus Signed Up 24 Million U.S. Subscribers in November and Took Bite Out of Netflix, Analysts Estimate",
-      "author": null,
-      "date_published": "2019-12-18T15:08:45.000Z",
-      "dek": null,
-      "lead_image_url": "https://pmcvariety.files.wordpress.com/2019/12/disney-plus-tablet.png?w=700&h=393&crop=1",
-      "content": "<article class=\"c-content\"> <p><a href=\"https://variety.com/t/disney/\" id=\"auto-tag_disney\">Disney</a> Plus had snagged an estimated 24 million U.S. subscribers as of the end of November &#x2014; and the strong debut for the Mouse House&#x2019;s new streaming package boosted cancellations among <a href=\"https://variety.com/t/netflix/\" id=\"auto-tag_netflix\">Netflix</a> customers, according to a new Wall Street analysis.</p>\n<p>The estimates come from the research team at Cowen &amp; Co., based on a census-weighted survey of 2,500 U.S. consumers conducted last month. Per the survey, 21% of total respondents said they signed up for <a href=\"https://variety.com/t/disney-plus/\" id=\"auto-tag_disney-plus\">Disney Plus</a> in November, suggesting the 24 million customer base exiting the month. That would blow away previous Wall Street forecasts for <a href=\"https://variety.com/2019/digital/features/youtube-facebook-ad-supported-video-originals-strategy-1203440823/\" id=\"related_article_link_disney\">Disney</a> Plus, which had pegged less than 20 million subs worldwide for 2020 even after factoring in expected lift from the <a href=\"https://variety.com/2019/digital/news/disney-plus-already-signed-up-verizon-free-unlimited-wireless-customers-1203379631/\">one-year-free offer from Verizon for certain customers</a>.</p>\n<p>While some research has indicated <a href=\"https://variety.com/2019/digital/news/disney-plus-22-million-mobile-app-downloads-1203432731/\">Disney Plus has had minimal impact on Netflix</a>, Cowen &amp; Co. estimated that <a href=\"https://variety.com/2019/tv/news/mandalorian-episode-7-questions-baby-yoda-1203446445/\" id=\"related_article_link_disney-plus\">Disney Plus</a> will result in about 1 million additional U.S. <a href=\"https://variety.com/2019/tv/reviews/soundtrack-netflix-review-musical-1203447344/\" id=\"related_article_link_netflix\">Netflix</a> customers cancelling service for the fourth quarter of 2019. All told, about 5.1 million Netflix subs in the States will bail in Q4, but the higher churn &#x201C;appears manageable&#x201D; for Netflix, Cowen analysts led by John Blackledge said in the report issued Wednesday.</p> <p>&#x201C;The incremental churn uptick [for Netflix] appears reasonable given the Disney+ launch, which has been highly publicized and includes various marketing programs, including a Verizon promotion that offers Disney+ for free for one year,&#x201D; the analysts wrote.</p>\n<p>For Q4 2019, <a href=\"https://variety.com/2019/digital/news/netflix-q3-2019-earnings-subscriber-growth-1203373186/\">Netflix forecast 7.6 million global paid net adds</a>, comprising 600,000 in the U.S. and 7.0 million for the international segment. Cowen&#x2019;s current estimates put Netflix net adds for the current quarter at 500,000. The analysts pointed to Netflix&#x2019;s &#x201C;strong&#x201D; content slate for Q4 as helping minimize the blow from Disney Plus, including high-profile originals like &#x201C;The Irishman,&#x201D; &#x201C;Marriage Story,&#x201D; &#x201C;6 Underground,&#x201D; &#x201C;The Two Popes&#x201D; and &#x201C;The Crown&#x201D; Season 3.</p>\n<p>Meanwhile, it&#x2019;s worth noting that a large swath of Disney Plus users in the U.S. are currently not paying for the service.</p>\n<p>About one-third (34%) of Disney Plus&#x2019; U.S. customers &#x2014; or 8 million as of the end of November &#x2014; are on <a href=\"https://variety.com/2019/digital/news/disney-plus-already-signed-up-verizon-free-unlimited-wireless-customers-1203379631/\">one-year-free offer from Verizon for certain customers</a>, while the remaining 66% are on paid plans, Cowen&#x2019;s analysts estimated. It&#x2019;s possible Disney Plus could see a tsunami of churn once the Verizon freebie deals roll off in late 2020. In addition, the Cowen survey data indicated there were about 19.4 million consumers who subscribe to both Netflix and Disney Plus, implying an 80% overlap between the services.</p>\n<p>Disney last month said <a href=\"https://variety.com/2019/digital/news/disney-says-disney-plus-has-over-10-million-signups-1203403515/\">over 10 million users had signed up for Disney Plus</a> as of Nov. 13 (the day after launch). The company said it doesn&#x2019;t plan to release any additional Disney Plus subscriber data outside of quarterly earnings calls.</p>\n<p>Netflix&#x2019;s subscriber growth in the U.S. &#x2014; its most mature market &#x2014; has slowed in recent quarters. The streamer this week <a href=\"https://variety.com/2019/digital/news/netflix-breaks-down-results-by-region-showing-strong-asia-pacific-europe-growth-1203440307/\">released its first breakdown of the international business by region</a>, showing strong growth and potential upside in Asia-Pacific especially. Netflix&#x2019;s penetration in Latin America is higher than Wall Street previously believed, with 29.4 million customers in the region (30% of its international base) as of the end of Q3.</p> <p>With big new rivals coming to market, Netflix has sought to reassure investors it can weather the storm. &#x201C;Many are focused on the &#x2018;streaming wars,&#x2019; but we&#x2019;ve been competing with streamers (Amazon, YouTube, Hulu) as well as linear TV for over a decade,&#x201D; the company wrote in its <a href=\"https://variety.com/2019/biz/news/netflix-competition-hulu-disney-plus-apple-plus-1203373259/\">Oct. 16 letter to shareholders</a>. &#x201C;The upcoming arrival of services like Disney+, Apple TV+, HBO Max, and Peacock is increased competition, but we are all small compared to linear TV.&#x201D;</p> </article>",
-      "next_page_url": null,
-      "url": "https://variety.com/2019/digital/news/disney-plus-24-million-us-subscribers-netflix-q4-churn-1203447210/",
-      "domain": "variety.com",
-      "excerpt": "Disney Plus had snagged an estimated 24 million U.S. subscribers as of the end of November — and the strong debut for the Mouse House’s new streaming package boosted cancellations among…",
-      "word_count": 1,
-      "direction": "ltr",
-      "total_pages": 1,
-      "rendered_pages": 1
-    },
-    "word_count": null,
-    "__v": 0
+    "domain": "variety.com",
+    "excerpt": "Disney Plus had snagged an estimated 24 million U.S. subscribers as of the end of November — and the strong debut for the Mouse House’s new streaming package boosted cancellations among…",
+    "word_count": 1,
+    "direction": "ltr",
+    "total_pages": 1,
+    "rendered_pages": 1
   },
-
-  {
-    "_id": {
-      "$oid": "5dfa7236741951288a30ee92"
-    },
-    "article_img_arr": [],
-    "vertical": "business",
-    "topic": null,
-    "date_published": {
-      "$date": "2019-12-18T15:22:00.000Z"
-    },
+  "word_count": null,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "5dfa7236741951288a30ee92"
+  },
+  "article_img_arr": [],
+  "vertical": "business",
+  "topic": null,
+  "date_published": {
+    "$date": "2019-12-18T15:22:00.000Z"
+  },
+  "author": "Fred Imbert",
+  "title": "NY Fed's Williams says it would take a 'material' change in economy for Fed to adjust stance - CNBC",
+  "domain": "CNBC",
+  "discription": "The Fed will have to see a substantial change in the economy before changing to its monetary policy, New York Fed's John Williams says.",
+  "lead_image_url": "https://image.cnbcfm.com/api/v1/image/105602674-1543938474524williams.jpg?v=1576681170",
+  "url": "https://www.cnbc.com/2019/12/18/ny-feds-williams-says-it-would-take-a-material-change-in-economy-for-fed-to-adjust-stance.html",
+  "content": {
+    "title": "NY Fed's Williams says it would take a 'material' change in economy for Fed to adjust stance",
+    "content": "<div><div class=\"ArticleBody-articleBody\" id=\"RegularArticle-ArticleBody-5\"><span class=\"HighlightShare-hidden\"></span><div id=\"Placeholder-ArticleBody-Video-106302944\" class=\"PlaceHolder-wrapper vilynx_enabled\"><div class=\"InlineVideo-videoEmbed\" id=\"InlineVideo-0\"><div class=\"InlineVideo-wrapper\"></div></div></div><div class=\"group\"><p>The Federal Reserve will have to see a substantial change in economic conditions before making any shifts in its monetary policy, New York Fed President John Williams said Wednesday.</p><p>&quot;Monetary policy is in a good place,&quot; Williams told CNBC&apos;s <a href=\"https://www.cnbc.com/steve-liesman/\" alt class>Steve Liesman</a>. &quot;But, as we&apos;ve proven in the past, if economic conditions shift, change in a material way &#x2026; obviously we&apos;re ready to adjust our policy views accordingly.&quot;</p><p>The Fed cut rates three times this year in a near-complete reversal of its 2018 policy moves. Last year, the central bank hiked rates four times. The last rate hike of 2018 added fuel to a massive year-end sell-off in the stock market.</p><p>&quot;With the rate cuts that we did this year, we created a situation where monetary policy is supportive and accommodating growth,&quot; Williams said. &quot;That&apos;s a good position given what&apos;s going on in the economy.&quot;</p><p>At its most recent meeting, the Fed last week set a high bar for further rate cuts and an even higher one to kick off another tightening cycle. Fed Chairman Jerome Powell said after the meeting that he wants to see <a href=\"https://www.cnbc.com/2019/12/11/fed-chair-powell-says-he-would-want-to-see-persistent-rise-in-inflation-before-hiking-rates-again.html\" alt class>persistently higher inflation</a> before hiking rates again.</p><p>U.S. inflation has remained stubbornly below the Fed&apos;s 2% goal. The core personal consumption expenditures price index &#x2014; the central bank&apos;s preferred inflation measure &#x2014; <a href=\"https://www.cnbc.com/2019/12/11/us-consumer-price-index-rose-0point3percent-in-november-vs-0point2percent-increase-expected.html\" alt class>rose just 1.6% in October</a> on a year-over-year basis.</p><p>.<a href=\"https://www.youtube.com/c/CNBC?sub_confirmation=1\" alt class><em><strong>Subscribe to CNBC on YouTube.</strong></em></a></p></div></div></div>",
     "author": "Fred Imbert",
-    "title": "NY Fed's Williams says it would take a 'material' change in economy for Fed to adjust stance - CNBC",
-    "domain": "CNBC",
-    "discription": "The Fed will have to see a substantial change in the economy before changing to its monetary policy, New York Fed's John Williams says.",
+    "date_published": "2019-12-18T15:22:32.000Z",
     "lead_image_url": "https://image.cnbcfm.com/api/v1/image/105602674-1543938474524williams.jpg?v=1576681170",
+    "dek": null,
+    "next_page_url": null,
     "url": "https://www.cnbc.com/2019/12/18/ny-feds-williams-says-it-would-take-a-material-change-in-economy-for-fed-to-adjust-stance.html",
-    "content": {
-      "title": "NY Fed's Williams says it would take a 'material' change in economy for Fed to adjust stance",
-      "content": "<div><div class=\"ArticleBody-articleBody\" id=\"RegularArticle-ArticleBody-5\"><span class=\"HighlightShare-hidden\"></span><div id=\"Placeholder-ArticleBody-Video-106302944\" class=\"PlaceHolder-wrapper vilynx_enabled\"><div class=\"InlineVideo-videoEmbed\" id=\"InlineVideo-0\"><div class=\"InlineVideo-wrapper\"></div></div></div><div class=\"group\"><p>The Federal Reserve will have to see a substantial change in economic conditions before making any shifts in its monetary policy, New York Fed President John Williams said Wednesday.</p><p>&quot;Monetary policy is in a good place,&quot; Williams told CNBC&apos;s <a href=\"https://www.cnbc.com/steve-liesman/\" alt class>Steve Liesman</a>. &quot;But, as we&apos;ve proven in the past, if economic conditions shift, change in a material way &#x2026; obviously we&apos;re ready to adjust our policy views accordingly.&quot;</p><p>The Fed cut rates three times this year in a near-complete reversal of its 2018 policy moves. Last year, the central bank hiked rates four times. The last rate hike of 2018 added fuel to a massive year-end sell-off in the stock market.</p><p>&quot;With the rate cuts that we did this year, we created a situation where monetary policy is supportive and accommodating growth,&quot; Williams said. &quot;That&apos;s a good position given what&apos;s going on in the economy.&quot;</p><p>At its most recent meeting, the Fed last week set a high bar for further rate cuts and an even higher one to kick off another tightening cycle. Fed Chairman Jerome Powell said after the meeting that he wants to see <a href=\"https://www.cnbc.com/2019/12/11/fed-chair-powell-says-he-would-want-to-see-persistent-rise-in-inflation-before-hiking-rates-again.html\" alt class>persistently higher inflation</a> before hiking rates again.</p><p>U.S. inflation has remained stubbornly below the Fed&apos;s 2% goal. The core personal consumption expenditures price index &#x2014; the central bank&apos;s preferred inflation measure &#x2014; <a href=\"https://www.cnbc.com/2019/12/11/us-consumer-price-index-rose-0point3percent-in-november-vs-0point2percent-increase-expected.html\" alt class>rose just 1.6% in October</a> on a year-over-year basis.</p><p>.<a href=\"https://www.youtube.com/c/CNBC?sub_confirmation=1\" alt class><em><strong>Subscribe to CNBC on YouTube.</strong></em></a></p></div></div></div>",
-      "author": "Fred Imbert",
-      "date_published": "2019-12-18T15:22:32.000Z",
-      "lead_image_url": "https://image.cnbcfm.com/api/v1/image/105602674-1543938474524williams.jpg?v=1576681170",
-      "dek": null,
-      "next_page_url": null,
-      "url": "https://www.cnbc.com/2019/12/18/ny-feds-williams-says-it-would-take-a-material-change-in-economy-for-fed-to-adjust-stance.html",
-      "domain": "www.cnbc.com",
-      "excerpt": "The Fed will have to see a substantial change in the economy before changing to its monetary policy, New York Fed's John Williams says.",
-      "word_count": 225,
-      "direction": "ltr",
-      "total_pages": 1,
-      "rendered_pages": 1
-    },
-    "word_count": null,
-    "__v": 0
-  }
+    "domain": "www.cnbc.com",
+    "excerpt": "The Fed will have to see a substantial change in the economy before changing to its monetary policy, New York Fed's John Williams says.",
+    "word_count": 225,
+    "direction": "ltr",
+    "total_pages": 1,
+    "rendered_pages": 1
+  },
+  "word_count": null,
+  "__v": 0
+})
