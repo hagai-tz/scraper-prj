@@ -10,12 +10,14 @@
   "dependencies": {
     "@postlight/mercury-parser": "^2.2.0",
     "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
     "dom-parser": "^0.1.6",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "handlebars": "^4.5.3",
     "jquery": "^3.4.1",
     "mongoose": "^5.8.1",
+    "puppeteer": "^2.0.0",
     "request": "^2.88.0"
   },
   "repository": {
@@ -26,5 +28,6 @@
     "url": "https://github.com/hagai-tz/scraper-prj/issues"
   },
   "homepage": "https://github.com/hagai-tz/scraper-prj#readme",
+  "devDependencies": {},
   "description": ""
 }

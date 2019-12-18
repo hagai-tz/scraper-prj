@@ -1,9 +1,9 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
-
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 // Document
 const ArticleSchema = new Schema({
+
 
         vertical: String,
         topic: String,
@@ -20,6 +20,9 @@ const ArticleSchema = new Schema({
 })
 
 
+
+
 // Collection
-const Article = mongoose.model('article', ArticleSchema)
-module.exports = Article
+const Article = mongoose.model("article", ArticleSchema);
+module.exports = Article;
+
