@@ -21,37 +21,41 @@
 
   <body>
     <nav>
-      <div class="nav-wrapper indigo">
-        <a href="#" class="brand-logo">Hackathon</a>
-        <a href="#" data-target="#mobile-demo" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
+      <div class="nav-wrapper black">
+        <a class="brand-logo center"
+          ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a
         >
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="">Sports</a></li>
-          <li><a href="">Update Data</a></li>
-          <li><a href="">NULL</a></li>
-          <li><a href="">Sports</a></li>
-          <li><a href="">Update Data</a></li>
-          <li><a href="">NULL</a></li>
-          <li><a href="">Sports</a></li>
-        </ul>
       </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="">Sports</a></li>
-      <li><a href="">Update Data</a></li>
-      <li><a href="">NULL</a></li>
-      <li><a href="">Sports</a></li>
-      <li><a href="">Update Data</a></li>
-      <li><a href="">NULL</a></li>
-      <li><a href="">Sports</a></li>
-    </ul>
+    <div id="buttons">
+      <a class="waves-effect waves-light btn-large z-depth-5" id="business"
+        ><i class="material-icons left">business</i>Business</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="entertainment"
+        ><i class="material-icons left">whatshot</i>Entertainment</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="general"
+        ><i class="material-icons left">public</i>General</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="health"
+        ><i class="material-icons left">healing</i>Health</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="science"
+        ><i class="material-icons left"></i>Science</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="technology"
+        ><i class="material-icons left">computer</i>Technology</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="sports"
+        ><i class="material-icons left">sports</i>Sports</a
+      >
+    </div>
 
-    <
     <script id="article-template" type="text/x-handlebars-template">
         {{#each .}}
         <div id="articleContainer">
+          <div class="row">
               <div class="card">
                 <div class="card-image">
                   <img src={{lead_image_url}}>
@@ -60,12 +64,11 @@
                 <div class="card-content">
                   <p>{{description}}</p>
                 </div>
-                <div class="card-action">
-                  <a href="#">This is a link</a>
+                <div class="article_content">
+                  <p>{{content}}</p>
                 </div>
               </div>
             </div>
-          </div>
         </div>
         {
         {{/each}}
