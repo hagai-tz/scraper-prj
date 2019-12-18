@@ -7,3 +7,4 @@ $('.btn').on('click', async function() {
   renderer.renderData(x);
   // $('#article_content').append();
 });
+
