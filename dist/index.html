@@ -25,11 +25,20 @@
         <a class="brand-logo center"
           ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a
         >
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required />
+            <a class="waves-effect waves-light" for="search"
+              ><i class="material-icons">search</i></a
+            >
+            <i class="material-icons">close</i>
+          </div>
+        </form>
       </div>
     </nav>
 
     <div id="buttons">
-      <a class="waves-effect waves-light btn-large z-depth-5" id="business"
+      <a class="waves-effect waves-light btn z-depth-5" id="business"
         ><i class="material-icons left">business</i>Business</a
       >
       <a class="waves-effect waves-light btn-large z-depth-5" id="entertainment"
@@ -52,31 +61,35 @@
       >
     </div>
 
-    <script id="article-template" type="text/x-handlebars-template">
-        {{#each .}}
-        <div id="articleContainer">
-          <div class="row">
-              <div class="card">
-                <div class="card-image">
-                  <img src={{lead_image_url}}>
-                  <span class="card-title">{{title}}</span>
-                </div>
-                <div class="card-content">
-                  <p>{{description}}</p>
-                </div>
-                <div class="article_content">
-                  <p>{{content}}</p>
-                </div>
-              </div>
-            </div>
-        </div>
-        {
-        {{/each}}
-      <div id="append"></div>
+    <a class="waves-effect waves-light btn-large z-depth-5 pulse" id="reload"
+      ><i class="material-icons left">refresh</i>Reload</a
+    >
 
-<div id="footer"></div>
+    <script id="article-template" type="text/x-handlebars-template">
+              {{#each .}}
+              <div class="row">
+              <div id="articleContainer">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src={{lead_image_url}}>
+                        <span class="card-title">{{title}}</span>
+                      </div>
+                      <div class="card-content">
+                        <p>{{description}}</p>
+                      </div>
+                      <div class="article_content">
+                        <p>{{content}}</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              {
+              {{/each}}
+            <div id="append"></div>
+
+      <div id="footer"></div>
     </script>
-    <script src="/jquery/dist/jquery.js">
+    <script src="/jquery/dist/jquery.js"></script>
     <script src="/handlebars/dist/handlebars.js"></script>
     <script src="Renderer.js"></script>
     <script src="ArticleManager.js"></script>

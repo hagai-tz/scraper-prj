@@ -6,17 +6,11 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 3%;
-  position: sticky;
 }
 
 /*@mixin column-count($ct) {
   column-count: $ct;
 }*/
-
-.articleContainer {
-  display: inline-block;
-  overflow: visible;
-}
 
 #sports,
 #health,
@@ -28,4 +22,26 @@ body {
   border-radius: 20px;
   background-color: black;
   margin: 1%;
+}
+
+#reload {
+  border-radius: 20px;
+  background-color: #76ff03;
+  display: flex;
+  font-size: x-large;
+  justify-content: center;
+  align-content: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 1%;
+}
+
+#search {
+  width: 25%;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.nav-wrapper > a {
+  position: absolute;
 }
