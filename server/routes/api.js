@@ -76,7 +76,5 @@ router.get('/scrap/', async function (req, res) {
   let check = await saveScraperToDb()
 })
 
-
-
 module.exports = router
 
