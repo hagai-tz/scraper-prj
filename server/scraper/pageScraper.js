@@ -22,16 +22,11 @@ const pageScraper = async (articleUrl, magazine) => {
     let content
     
     if (magazine == 'cnn') {
-      //let test = $('.zn-body__paragraph.speakable')
       content = $('.zn-body__paragraph').text()
       topicTest = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container").text()
       topic = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > h1").text()
       author = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > div.metadata > div.metadata__info.js-byline-images > p.metadata__byline > span").text()
       date = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > div.metadata > div.metadata__info.js-byline-images > p.update-time").text()
-      //bodyFull = $("#body-text > div.l-container").html()
-      //$ = cheerio.load(bodyFull)
-      //$('body > div.zn-body__read-all .el__leafmedia.el__leafmedia--twitter').remove()
-      bodyClean = $.html()
     }
 
     
@@ -48,9 +43,15 @@ const pageScraper = async (articleUrl, magazine) => {
           }else{
             content = bodyFull
           }
-          
         }
     
+
+          str = content
+          str = str.replace(/(^\s*)|(\s*$)/gi,"")
+          str = str.replace(/[ ]{2,}/gi," ")
+          str = str.replace(/\n /,"\n")
+          let word_count = str.split(' ').length
+          
 
     let articleObj = {
         vertical: 'sport',
@@ -63,7 +64,7 @@ const pageScraper = async (articleUrl, magazine) => {
         lead_image_url: "",
         title: topic,
         url: articleUrl,
-        word_count: ""
+        word_count: word_count
     }
 
     browser.close();

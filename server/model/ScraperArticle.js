@@ -9,7 +9,7 @@ const ScraperSchema = new Schema({
     content: String,
     date_published: String,
     domain: String,
-    discription: String,
+    description: String,
     lead_image_url: String,
     article_img_arr: Array,
     title: String,

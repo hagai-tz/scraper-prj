@@ -32,7 +32,7 @@ router.post('/articles', function (req, res) {
     content: article.content,
     date_published: article.date_published,
     domain: article.domain,
-    discription: article.discription,
+    description: article.description,
     lead_image_url: article.lead_image_url,
     title: article.title,
     url: article.url,
@@ -63,7 +63,7 @@ router.post('/newsapi', async function(req, res){
         author: a.author,
         title: a.title,
         domain: a.source.name,
-        discription: a.description,
+        description: a.description,
         lead_image_url: a.urlToImage,
         url: a.url,
         content: await Mercury.parse(a.url, { contentType: 'Markdown' }),
@@ -95,11 +95,11 @@ const saveScraperToDb = async function(){
       author: sa.author,
       title: sa.title,
       domain: null,
-      discription: sa.description,
+      description: sa.description,
       lead_image_url: null,
       url: sa.url,
       content: sa.content,
-      word_count: null,
+      word_count: sa.word_count,
        
     })
     newApiArticle.save()
