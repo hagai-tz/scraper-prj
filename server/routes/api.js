@@ -75,13 +75,5 @@ router.post('/newsapi', async function(req, res){
   })
 })
 
-// Yoni's function 
-
-setInterval(() => {
-  
-}, interval);
-
-
-
 module.exports = router
 
