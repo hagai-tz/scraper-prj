@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer')
 
 
 const pageScraper = async (articleUrl, magazine) => {
-  // articleUrl = 'https://edition.cnn.com/2019/12/17/football/qatar-world-club-cup-liverpool-spt-intl/index.html'
+
   console.log(`opening headless chrome to scrap page`)
 
     const browser = await puppeteer.launch();
@@ -20,14 +20,11 @@ const pageScraper = async (articleUrl, magazine) => {
     let bodyFull
     let bodyClean
     let content
+    let imgSrc 
     
     if (magazine == 'cnn') {
       content = $('.zn-body__paragraph').text()
-     // let img = $('.l-container').find('img').attr('src')
-     // let img2 = $('.l-container').find('img')
-    //  for (let index = 0; index < img2.length; index++) {
-     //   img2[index] = img2[index].attribs.data-src-medium
-    //  }
+      imgSrc = $('.media__image.media__image--responsive').attr('data-src-medium')
       topicTest = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container").text()
       topic = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > h1").text()
       author = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > div.metadata > div.metadata__info.js-byline-images > p.metadata__byline > span").text()
@@ -49,14 +46,12 @@ const pageScraper = async (articleUrl, magazine) => {
             content = bodyFull
           }
         }
-    
 
-          str = content
-          str = str.replace(/(^\s*)|(\s*$)/gi,"")
-          str = str.replace(/[ ]{2,}/gi," ")
-          str = str.replace(/\n /,"\n")
-          let word_count = str.split(' ').length
-          
+    str = content
+    str = str.replace(/(^\s*)|(\s*$)/gi,"")
+    str = str.replace(/[ ]{2,}/gi," ")
+    str = str.replace(/\n /,"\n")
+    let word_count = str.split(' ').length
 
     let articleObj = {
         vertical: 'sport',
@@ -66,7 +61,7 @@ const pageScraper = async (articleUrl, magazine) => {
         date_published: date,
         domain: "",
         description: "",
-        lead_image_url: "",
+        lead_image_url: imgSrc,
         title: topic,
         url: articleUrl,
         word_count: word_count

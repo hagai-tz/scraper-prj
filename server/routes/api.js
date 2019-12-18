@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 
 const request = require('request');
@@ -10,12 +10,16 @@ const Mercury = require('@postlight/mercury-parser');
 const Scraper = require('../model/ScraperArticle');
 const mainScraper = require('../scraper/mainScraper');
 
-router.get('/articles/:vertical', async function (req, res) {
+router.get('/articles/:vertical', async function(req, res) {
   let vertical = req.params.vertical;
   let articlesArr = await Article.find({ vertical });
   res.send(articlesArr);
 });
 
+router.get('/scrap/sport', async function(req, res) {
+  let articlesArr = await Scraper.find({ vertical: 'sport' });
+  res.send(articlesArr);
+});
 
 router.post('/newsapi', async function (req, res) {
   newsAPIKey = '0b8fc17ccb004aa0b44543dab7dbb353';
@@ -53,22 +57,23 @@ router.post('/newsapi', async function (req, res) {
 
 //scraper
 
+
 const saveScraperToDb = async function () {
 
   const articleArray = await mainScraper()
 
   articleArray.forEach(sa => {
 
+  articleArray.forEach(sa => {
     let newApiArticle = new Scraper({
-
-      vertical: "sport",
+      vertical: 'sport',
       topic: null,
       date_published: sa.date_published,
       author: sa.author,
       title: sa.title,
       domain: null,
       description: sa.description,
-      lead_image_url: null,
+      lead_image_url: sa.lead_image_url,
       url: sa.url,
       content: sa.content,
       word_count: sa.word_count,
