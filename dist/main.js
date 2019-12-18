@@ -11,3 +11,4 @@ $('#sports').on('click', async function() {
   let x = await articleManager.getDataFromScrapDB('sport');
   renderer.renderScrapData(x);
 });
+
