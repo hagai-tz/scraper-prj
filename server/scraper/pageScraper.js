@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer')
 
 
 const pageScraper = async (articleUrl, magazine) => {
-  //articleUrl = 'https://edition.cnn.com/2019/12/17/football/qatar-world-club-cup-liverpool-spt-intl/index.html'
+
   console.log(`opening headless chrome to scrap page`)
 
     const browser = await puppeteer.launch();

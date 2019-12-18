@@ -19,7 +19,6 @@
   </head>
 
   <body>
-
     <nav>
       <div class="nav-wrapper black">
         <a class="brand-logo center"
@@ -38,9 +37,6 @@
     </nav>
 
     <div id="buttons">
-
-      <a class="waves-effect waves-light btn z-depth-5" id="business"
-
       <a class="waves-effect waves-light btn-large z-depth-5 btn" id="business"
         ><i class="material-icons left">business</i>Business</a
       >
@@ -68,16 +64,7 @@
       >
     </div>
 
-      <div class="nav-wrapper black">
-        <a class="brand-logo center"
-          ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a>
-      </div>
-    </nav>
-
-    <div id="buttons">
-      <a class="waves-effect waves-light btn-large z-depth-5" id="business"
-
-    <script id="article-template" type="text/x-handlebars-template">
+    <!-- <script id="article-template" type="text/x-handlebars-template">
               {{#each .}}
               <div class="row">
               <div id="articleContainer">
@@ -96,8 +83,61 @@
                   </div>
               </div>
               {
-              {{/each}}
-            <div id="append"></div>
+              {{/each}} -->
+            <div id="append">
+                <div class="row">
+                    <div class="column">
+                    <div id="articleContainer">
+                          <div class="card">
+                            <div class="card-image">
+                              <img src="https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg">
+                              <span class="card-title"></span>
+                            </div>
+                            <div class="card-content">
+                              <p>"The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for."</p>
+                            </div>
+                            <div class="article_content">
+                              <p>{{content}}</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div id="articleContainer">
+                              <div class="card">
+                                <div class="card-image">
+                                  <img src="https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg">
+                                  <span class="card-title"></span>
+                                </div>
+                                <div class="card-content">
+                                  <p>"The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for."</p>
+                                </div>
+                                <div class="article_content">
+                                  <p>{{content}}</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div id="articleContainer">
+                                  <div class="card">
+                                    <div class="card-image">
+                                      <img src="https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg">
+                                      <span class="card-title"></span>
+                                    </div>
+                                    <div class="card-content">
+                                      <p>"The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for."</p>
+                                    </div>
+                                    <div class="article_content">
+                                      <p>{{content}}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            </div>
+            </div>
 
       <div id="footer"></div>
     </script>
