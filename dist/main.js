@@ -1,20 +1,11 @@
 const articleManager = new ArticleManager();
 const renderer = new Renderer();
 
-<<<<<<< Updated upstream
-$('#sports').on('click', async function() {
-  let data = await articleManager.getDataFromDB('Sport');
-  renderer.renderData(data);
-});
+// $('#search-btn').on('click', function() {
+//   let articleInput = $('#search-input').val()
+//   console.log(articleInput)
+// });
 
-/*$("document").ready(function() {
-  $("h1").fadeIn("slow");
-});*/
-
-$(document).ready(function() {
-  $(".sidenav").sidenav();
-});
-=======
 // $('#business').on('click', async function() {
 //   let data = articleManager.getDataFromDB(business);
 //   renderer.renderData(data);
@@ -76,4 +67,4 @@ $('.btn').on('click', async function() {
 // });
 
 // $('#card').on('click', async function() {});
->>>>>>> Stashed changes
+

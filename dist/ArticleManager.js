@@ -8,12 +8,15 @@ class ArticleManager {
     // this.ArticlesData = data;
     return data;
   }
-<<<<<<< Updated upstream
-=======
 
   async getDataFromAPI(topicInput) {
     let articlesArry = await $.post(`/newsapi?q=${topicInput}`);
     console.log(articlesArry);
   }
->>>>>>> Stashed changes
+
+async getDataFromAPI(topicInput){
+  let articlesArry = await $.post(`/newsapi?q=${topicInput}`)
+  console.log(articlesArry)
+
+}
 }
