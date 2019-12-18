@@ -8,7 +8,7 @@ const ArticleSchema = new Schema({
         vertical: String,
         topic: String,
         author: String,
-        content: Array,
+        content: {},
         date_published: Date,
         domain: String,
         discription: String,
@@ -16,7 +16,7 @@ const ArticleSchema = new Schema({
         article_img_arr: Array,
         title: String,
         url: String,
-        word_count: Number
+        word_count: Number,
 })
 
 

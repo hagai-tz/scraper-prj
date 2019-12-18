@@ -3,6 +3,10 @@ const router = express.Router();
 const request = require('request');
 const Article = require('../model/Article');
 
+//new packages for Mercury
+const Mercury = require('@postlight/mercury-parser')
+
+
 router.get('/check', function (req, res) {
   res.send('Hello World');
 });
@@ -36,45 +40,50 @@ router.post('/articles', function (req, res) {
   res.end();
 });
 
-// router.post('/search', function(req, res){
-//   let articleInput = req.query.articleInput
-//   Article.find({},)
-// })
 
-
-router.post('/newsapi', function(req, res){
+router.post('/newsapi', async function(req, res){
   newsAPIKey = "0b8fc17ccb004aa0b44543dab7dbb353"
   let topic = req.query.q
   let url = `https://newsapi.org/v2/top-headlines?country=us&category=${topic}&apiKey=${newsAPIKey}`
-
-  request(url, function(err, response){
+  
+  
+  request(url, async function(err, response){
     let articleArrData = JSON.parse(response.body)
     console.log(articleArrData.articles)
+    
+    articleArrData.articles.forEach( async a => {
 
-    articleArrData.articles.forEach(a => {
-      
       let newApiArticle = new Article({
         vertical: topic,
         topic: null,
         date_published: a.publishedAt,
         author: a.author,
         title: a.title,
-        content: a.content,
         domain: a.source.name,
         discription: a.description,
         lead_image_url: a.urlToImage,
         url: a.url,
-        word_count: null
+        content: await Mercury.parse(a.url, { contentType: 'Markdown' }),
+        word_count: null,
+        content2: null
+         
       });
-
+      
       newApiArticle.save()
-      console.log(newApiArticle)
-
     });
 
-
-    
   })
 })
 
+
+router.get('/mc-article', async function (req, res) {
+  const MCurl = req.query.MCurl
+  console.log(MCurl)
+  let article = await Mercury.parse(MCurl, { contentType: 'Markdown' })
+  console.log(article.content)
+
+})
+
+
 module.exports = router
+
