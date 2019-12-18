@@ -108,6 +108,7 @@ const saveScraperToDb = async function(){
 
 router.get('/scrap/', async function (req, res) {
   let check = await saveScraperToDb()
+  res.end()
 })
 
 

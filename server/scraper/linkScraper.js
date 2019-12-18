@@ -17,6 +17,7 @@ const linksScrapper = async function(sportSource){
     for (let index = 1; index < ilCount+1; index++) {
         articleURL = $(sportSource.articleUrlStart + index + sportSource.articleUrlEnd, html).attr('href')   
         articleUrlArray.push(articleURL)
+        console.log(`scrapping link ${index}`)
     }
 
     await browser.close()

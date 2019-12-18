@@ -18,11 +18,16 @@ const pageScraper = async (articleUrl, magazine) => {
     let bodyClean
     
     if (magazine == 'cnn') {
+      //let test = $('.zn-body__paragraph.speakable')
+      let test = $('.zn-body__paragraph')
+
+      topicTest = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container").text()
+
       topic = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > h1").text()
       author = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > div.metadata > div.metadata__info.js-byline-images > p.metadata__byline > span").text()
       date = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > div.metadata > div.metadata__info.js-byline-images > p.update-time").text()
-      bodyFull = $("#body-text > div.l-container").html()
-      $ = cheerio.load(bodyFull)
+      //bodyFull = $("#body-text > div.l-container").html()
+      //$ = cheerio.load(bodyFull)
       $('body > div.zn-body__read-all .el__leafmedia.el__leafmedia--twitter').remove()
       bodyClean = $.html()
     }
