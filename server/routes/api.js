@@ -1,20 +1,20 @@
 const express = require('express');
 const router = express.Router();
-// const request = require('request');
+const request = require('request');
 const Article = require('../model/Article');
 
-router.get('/check', function(req, res) {
+router.get('/check', function (req, res) {
   res.send('Hello World');
 });
 
-router.get('/articles/:vertical', async function(req, res) {
+router.get('/articles/:vertical', async function (req, res) {
   let vertical = req.params.vertical;
   let verCap = vertical.charAt(0).toUpperCase() + vertical.slice(1);
   let articlesArr = await Article.find({ vertical: verCap });
   res.send(articlesArr);
 });
 
-router.post('/articles', function(req, res) {
+router.post('/articles', function (req, res) {
   let article = req.body;
 
   let newArticle = new Article({
@@ -30,10 +30,27 @@ router.post('/articles', function(req, res) {
     url: article.url,
     word_count: article.word_count
   });
-  newArticle.save().then(function(article) {
+  newArticle.save().then(function (article) {
     console.log(`${article.vertical} saved`);
   });
   res.end();
 });
 
-module.exports = router;
+// router.post('/search', function(req, res){
+//   let articleInput = req.query.articleInput
+//   Article.find({},)
+// })
+
+
+router.post('/newsapi', function(req, res){
+  newsAPIKey = "0b8fc17ccb004aa0b44543dab7dbb353"
+  let topic = req.query.q
+  let url = `https://newsapi.org/v2/top-headlines?country=us&category=${topic}&apiKey=${newsAPIKey}`
+
+  request(url, function(err, response){
+    let articleArrData = JSON.parse(response.body)
+    console.log(articleArrData)
+  })
+})
+
+module.exports = router

@@ -13,6 +13,7 @@ const ArticleSchema = new Schema({
         domain: String,
         discription: String,
         lead_image_url: String,
+        article_img_arr: Array,
         title: String,
         url: String,
         word_count: Number
