@@ -3,6 +3,10 @@ const router = express.Router();
 const request = require('request');
 const Article = require('../model/Article');
 
+const Scraper = require('../model/ScraperArticle');
+const mainScraper = require('../scraper/mainScraper');
+
+
 //new packages for Mercury
 const Mercury = require('@postlight/mercury-parser')
 
@@ -40,7 +44,6 @@ router.post('/articles', function (req, res) {
   res.end();
 });
 
-
 router.post('/newsapi', async function(req, res){
   newsAPIKey = "0b8fc17ccb004aa0b44543dab7dbb353"
   let topic = req.query.q
@@ -73,7 +76,42 @@ router.post('/newsapi', async function(req, res){
     });
 
   })
+
 })
+
+//scraper
+
+const saveScraperToDb = async function(){
+  
+  const articleArray = await mainScraper()
+
+  articleArray.forEach( sa => {
+
+    let newApiArticle = new Scraper({
+
+      vertical: "sport",
+      topic: null,
+      date_published: sa.date_published,
+      author: sa.author,
+      title: sa.title,
+      domain: null,
+      discription: sa.description,
+      lead_image_url: null,
+      url: sa.url,
+      content: sa.content,
+      word_count: null,
+       
+    })
+    newApiArticle.save()
+  })
+}
+
+router.get('/scrap/', async function (req, res) {
+  let check = await saveScraperToDb()
+})
+
+
+
 
 
 router.get('/mc-article', async function (req, res) {
