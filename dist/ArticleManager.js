@@ -8,4 +8,10 @@ class ArticleManager {
     this.ArticlesData = data;
     return data;
   }
+
+
+async getDataFromAPI(topicInput){
+  let articlesArry = await $.post(`/newsapi?q=${topicInput}`)
+  console.log(articlesArry)
+}
 }
