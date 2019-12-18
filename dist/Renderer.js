@@ -3,6 +3,8 @@ class Renderer {
     const source = $('#article-template').html();
     const template = Handlebars.compile(source);
     const someHTML = template(data);
-    $('#append').append(someHTML);
+    $('#append')
+      .empty()
+      .append(someHTML);
   }
 }

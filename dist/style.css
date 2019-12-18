@@ -1,0 +1,39 @@
+<<<<<<< Updated upstream
+=======
+body {
+  background-color: #e0e0e0;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  position: sticky;
+}
+
+#cards {
+  height: 300px;
+  width: 300px;
+}
+
+/*@mixin column-count($ct) {
+  column-count: $ct;
+}*/
+
+.articleContainer {
+  display: inline-block;
+  overflow: visible;
+}
+
+#sports,
+#health,
+#technology,
+#general,
+#science,
+#entertainment,
+#business {
+  border-radius: 20px;
+  background-color: black;
+  margin: 1%;
+}
+>>>>>>> Stashed changes
