@@ -1,14 +1,10 @@
 
 const cheerio = require('cheerio')
 const puppeteer = require('puppeteer')
-// const articleUrl = 'https://edition.cnn.com/2019/12/17/football/serie-a-racism-artwork-milan-roma-inter-spt-intl/index.html'
-// const url2 = 'https://edition.cnn.com/2019/12/16/us/patriots-video-producer-speaks-out-spt-trnd/index.html'
-// const url3 = 'https://edition.cnn.com/2019/12/14/us/heisman-trophy-winner-2019/index.html'
-// const articleUrlArray = [articleUrl,url2,url3 ];
 
 
 const pageScraper = async (articleUrl, magazine) => {
-    const browser = await puppeteer.launch({headless:false});
+    const browser = await puppeteer.launch();
     const page = await browser.newPage();
     await page.goto(articleUrl);
     const html = await page.content()
@@ -56,7 +52,7 @@ const pageScraper = async (articleUrl, magazine) => {
         content: bodyClean,
         date_published: date,
         domain: "",
-        discription: "",
+        description: "",
         lead_image_url: "",
         title: topic,
         url: articleUrl,
@@ -67,6 +63,5 @@ const pageScraper = async (articleUrl, magazine) => {
     return  articleObj
 }
 
-//pageScraper(articleUrl)
 
 module.exports = pageScraper 
