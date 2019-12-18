@@ -7,4 +7,12 @@ class Renderer {
       .empty()
       .append(someHTML);
   }
+  renderScrapData(data) {
+    const source = $('#articleScrap-template').html();
+    const template = Handlebars.compile(source);
+    const someHTML = template(data);
+    $('#append')
+      .empty()
+      .append(someHTML);
+  }
 }
