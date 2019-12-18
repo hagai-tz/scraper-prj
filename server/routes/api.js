@@ -63,7 +63,7 @@ const saveScraperToDb = async function(){
       title: sa.title,
       domain: null,
       description: sa.description,
-      lead_image_url: null,
+      lead_image_url: sa.lead_image_url,
       url: sa.url,
       content: sa.content,
       word_count: sa.word_count,
