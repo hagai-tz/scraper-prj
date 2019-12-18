@@ -16,6 +16,6 @@ app.use(express.static(path.join(__dirname, '..', 'node_modules')));
 app.use('/', api);
 
 const port = 9000;
-app.listen(port, function () {
+app.listen(port, function() {
   console.log(`Running on port ${port}`);
 });

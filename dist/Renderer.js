@@ -1,8 +1,8 @@
 class Renderer {
   renderData(data) {
-    const source = $("#article-template").html();
+    const source = $('#article-template').html();
     const template = Handlebars.compile(source);
-    const someHTML = template({ data });
-    $("#append").append(someHTML);
+    const someHTML = template(data);
+    $('#append').append(someHTML);
   }
 }
