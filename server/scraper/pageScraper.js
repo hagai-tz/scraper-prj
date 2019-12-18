@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer')
 
 
 const pageScraper = async (articleUrl, magazine) => {
-  articleUrl = 'https://edition.cnn.com/2019/12/17/football/qatar-world-club-cup-liverpool-spt-intl/index.html'
+  //articleUrl = 'https://edition.cnn.com/2019/12/17/football/qatar-world-club-cup-liverpool-spt-intl/index.html'
   console.log(`opening headless chrome to scrap page`)
 
     const browser = await puppeteer.launch();
@@ -20,11 +20,23 @@ const pageScraper = async (articleUrl, magazine) => {
     let bodyFull
     let bodyClean
     let content
+    let imgSrc 
     
     if (magazine == 'cnn') {
       content = $('.zn-body__paragraph').text()
-     // let img = $('.l-container').find('img').attr('src')
-     // let img2 = $('.l-container').find('img')
+    // let img = $('.l-container').find('img').attr('src')
+    // let img9 = $('.l-container').find('img').attr('data-src-medium')
+
+    imgSrc = $('.media__image.media__image--responsive').attr('data-src-medium')
+
+    //  let img2 = $('.l-container').find('img')
+    //  let img8 = $('.l-container')
+    //  let img5=img2[6].attribs.data-src-medium
+
+    //  let img3 = $('.l-container').children('img')
+    //  let img4 = $('.l-container').children('img').attr('src')
+    
+ 
     //  for (let index = 0; index < img2.length; index++) {
      //   img2[index] = img2[index].attribs.data-src-medium
     //  }
@@ -66,7 +78,7 @@ const pageScraper = async (articleUrl, magazine) => {
         date_published: date,
         domain: "",
         description: "",
-        lead_image_url: "",
+        lead_image_url: imgSrc,
         title: topic,
         url: articleUrl,
         word_count: word_count
