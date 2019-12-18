@@ -26,12 +26,10 @@ const mainScraper = async function(){
     for (let index = 0; index < linkArray.length; index++) {
         linkArray[index]='https://edition.cnn.com'+linkArray[index]
     }
-
-    for (let index = 0; index < 1; index++) {
+linkArray.length
+    for (let index = 0; index <linkArray.length; index++) {
         obj = await page(linkArray[index], 'cnn')
-        
         console.log(`scraped ${index} pages`)
-
         articleObjArray.push(obj)
     }
     

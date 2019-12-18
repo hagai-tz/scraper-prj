@@ -16,11 +16,11 @@ router.get('/articles/:vertical', async function (req, res) {
   res.send(articlesArr);
 });
 
+
 router.post('/newsapi', async function(req, res) {
   newsAPIKey = '0b8fc17ccb004aa0b44543dab7dbb353';
   let topic = req.query.q;
   let url = `https://newsapi.org/v2/top-headlines?country=us&category=${topic}&apiKey=${newsAPIKey}`;
-
   request(url, async function(err, response) {
     let articleArrData = JSON.parse(response.body);
     // console.log(articleArrData.articles);
@@ -33,7 +33,7 @@ router.post('/newsapi', async function(req, res) {
         author: a.author,
         title: a.title,
         domain: a.source.name,
-        discription: a.description,
+        description: a.description,
         lead_image_url: a.urlToImage,
         url: a.url,
         content: await Mercury.parse(a.url, { contentType: 'Markdown' }),
@@ -62,11 +62,11 @@ const saveScraperToDb = async function(){
       author: sa.author,
       title: sa.title,
       domain: null,
-      discription: sa.description,
+      description: sa.description,
       lead_image_url: null,
       url: sa.url,
       content: sa.content,
-      word_count: null,
+      word_count: sa.word_count,
        
     })
     newApiArticle.save()
@@ -75,6 +75,7 @@ const saveScraperToDb = async function(){
 
 router.get('/scrap/', async function (req, res) {
   let check = await saveScraperToDb()
+  res.end()
 })
 
 module.exports = router
