@@ -5,62 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hackathon</title>
-    <
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
 
-<div id="search-container">
-  <input id="search-input" type="text" placeholder="Search for article">
-  <button id="search-btn">Search</button>
-</div>
-
-    <div id="header">
-      <h1>Hackathon</h1>
-      <div id="navBar">
-        <ul>
-          <li>
-            <button class="btn" id="sports">
-              <i class="fas fa-futbol">Sports</i>
-            </button>
-          </li>
-          <li>
-            <button class="btn">
-              <i class="fas fa-redo-alt">Update Data</i>
-            </button>
-          </li>
-          <li>
-            <button class="btn"><i class="fas fa-futbol">Null</i></button>
-          </li>
-          <li>
-            <button class="btn"><i class="fas fa-futbol">Null</i></button>
-          </li>
-        </ul>
+    <nav>
+      <div class="nav-wrapper black">
+        <a class="brand-logo center"
+          ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a>
       </div>
+    </nav>
+
+    <div id="buttons">
+      <a class="waves-effect waves-light btn-large z-depth-5" id="business"
+        ><i class="material-icons left">business</i>Business</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="entertainment"
+        ><i class="material-icons left">whatshot</i>Entertainment</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="general"
+        ><i class="material-icons left">public</i>General</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="health"
+        ><i class="material-icons left">healing</i>Health</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="science"
+        ><i class="material-icons left"></i>Science</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="technology"
+        ><i class="material-icons left">computer</i>Technology</a
+      >
+      <a class="waves-effect waves-light btn-large z-depth-5" id="sports"
+        ><i class="material-icons left">sports</i>Sports</a
+      >
     </div>
-    <div id="append"></div>
+
     <script id="article-template" type="text/x-handlebars-template">
-      {{#each .}}
-      <div id="articleContainer">
-        <div>{{vertical}}</div>
-        <div>{{author}}</div>
-      </div>
-      {{/each}}
-    </script>
+        {{#each .}}
+        <div id="articleContainer">
+          <div class="row">
+              <div class="card">
+                <div class="card-image">
+                  <img src={{lead_image_url}}>
+                  <span class="card-title">{{title}}</span>
+                </div>
+                <div class="card-content">
+                  <p>{{description}}</p>
+                </div>
+                <div class="article_content">
+                  <p>{{content}}</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        {
+        {{/each}}
+      <div id="append"></div>
 
-    <div id="footer">
-      <i class="far fa-copyright"></i>
-    </div>
-    <script src="/jquery/dist/jquery.js"></script>
+<div id="footer"></div>
+    </script>
+    <script src="/jquery/dist/jquery.js">
     <script src="/handlebars/dist/handlebars.js"></script>
     <script src="Renderer.js"></script>
     <script src="ArticleManager.js"></script>
