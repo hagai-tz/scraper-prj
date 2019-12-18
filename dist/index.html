@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hackathon</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+
     <nav>
       <div class="nav-wrapper black">
         <a class="brand-logo center"
@@ -38,32 +38,44 @@
     </nav>
 
     <div id="buttons">
+
       <a class="waves-effect waves-light btn z-depth-5" id="business"
+
+      <a class="waves-effect waves-light btn-large z-depth-5 btn" id="business"
         ><i class="material-icons left">business</i>Business</a
       >
-      <a class="waves-effect waves-light btn-large z-depth-5" id="entertainment"
+      <a
+        class="waves-effect waves-light btn-large z-depth-5 btn"
+        id="entertainment"
         ><i class="material-icons left">whatshot</i>Entertainment</a
       >
-      <a class="waves-effect waves-light btn-large z-depth-5" id="general"
+      <a class="waves-effect waves-light btn-large z-depth-5 btn" id="general"
         ><i class="material-icons left">public</i>General</a
       >
-      <a class="waves-effect waves-light btn-large z-depth-5" id="health"
+      <a class="waves-effect waves-light btn-large z-depth-5 btn" id="health"
         ><i class="material-icons left">healing</i>Health</a
       >
-      <a class="waves-effect waves-light btn-large z-depth-5" id="science"
+      <a class="waves-effect waves-light btn-large z-depth-5 btn" id="science"
         ><i class="material-icons left"></i>Science</a
       >
-      <a class="waves-effect waves-light btn-large z-depth-5" id="technology"
+      <a
+        class="waves-effect waves-light btn-large z-depth-5 btn"
+        id="technology"
         ><i class="material-icons left">computer</i>Technology</a
       >
-      <a class="waves-effect waves-light btn-large z-depth-5" id="sports"
+      <a class="waves-effect waves-light btn-large z-depth-5 btn" id="sports"
         ><i class="material-icons left">sports</i>Sports</a
       >
     </div>
 
-    <a class="waves-effect waves-light btn-large z-depth-5 pulse" id="reload"
-      ><i class="material-icons left">refresh</i>Reload</a
-    >
+      <div class="nav-wrapper black">
+        <a class="brand-logo center"
+          ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a>
+      </div>
+    </nav>
+
+    <div id="buttons">
+      <a class="waves-effect waves-light btn-large z-depth-5" id="business"
 
     <script id="article-template" type="text/x-handlebars-template">
               {{#each .}}
