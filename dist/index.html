@@ -55,11 +55,11 @@
       >
     </div>
 
-    <<<<<<< HEAD
     <script id="article-template" type="text/x-handlebars-template">
       {{#each .}}
       <div id="articleContainer">
         <div class="row">
+          <div class="column">
             <div class="card">
               <div class="card-image">
                 <img src={{lead_image_url}}>
@@ -73,6 +73,7 @@
               </div>
             </div>
           </div>
+      </div>
       </div>
       {{/each}}
     </script>
@@ -90,7 +91,7 @@
                 <p>{{description}}</p>
               </div>
               <div class="article_content">
-                <!-- <p>{{{content.content}}}</p> -->
+                <!-- <p>{{content}}</p> -->
               </div>
             </div>
           </div>
