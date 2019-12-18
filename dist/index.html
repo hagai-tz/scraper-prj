@@ -24,15 +24,6 @@
         <a class="brand-logo center"
           ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a
         >
-        <form>
-          <div class="input-field">
-            <input id="search" type="search" required />
-            <a class="waves-effect waves-light" for="search"
-              ><i class="material-icons">search</i></a
-            >
-            <i class="material-icons">close</i>
-          </div>
-        </form>
       </div>
     </nav>
 
@@ -59,88 +50,58 @@
         id="technology"
         ><i class="material-icons left">computer</i>Technology</a
       >
-      <a class="waves-effect waves-light btn-large z-depth-5 btn" id="sports"
+      <a class="waves-effect waves-light btn-large z-depth-5" id="sports"
         ><i class="material-icons left">sports</i>Sports</a
       >
     </div>
 
-    <!-- <script id="article-template" type="text/x-handlebars-template">
-              {{#each .}}
-              <div class="row">
-              <div id="articleContainer">
-                    <div class="card">
-                      <div class="card-image">
-                        <img src={{lead_image_url}}>
-                        <span class="card-title">{{title}}</span>
-                      </div>
-                      <div class="card-content">
-                        <p>{{description}}</p>
-                      </div>
-                      <div class="article_content">
-                        <p>{{content}}</p>
-                      </div>
-                    </div>
-                  </div>
+    <script id="article-template" type="text/x-handlebars-template">
+      {{#each .}}
+      <div id="articleContainer">
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="card-image">
+                <img src={{lead_image_url}}>
+                <span class="card-title">{{title}}</span>
               </div>
-              {
-              {{/each}} -->
-            <div id="append">
-                <div class="row">
-                    <div class="column">
-                    <div id="articleContainer">
-                          <div class="card">
-                            <div class="card-image">
-                              <img src="https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg">
-                              <span class="card-title"></span>
-                            </div>
-                            <div class="card-content">
-                              <p>"The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for."</p>
-                            </div>
-                            <div class="article_content">
-                              <p>{{content}}</p>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-
-                    <div class="column">
-                        <div id="articleContainer">
-                              <div class="card">
-                                <div class="card-image">
-                                  <img src="https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg">
-                                  <span class="card-title"></span>
-                                </div>
-                                <div class="card-content">
-                                  <p>"The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for."</p>
-                                </div>
-                                <div class="article_content">
-                                  <p>{{content}}</p>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div id="articleContainer">
-                                  <div class="card">
-                                    <div class="card-image">
-                                      <img src="https://cdn.vox-cdn.com/thumbor/BLAD8BQU4bvCfUrKfizzP7q4zCE=/0x146:2040x1214/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/10802091/acastro_180508_1777_google_IO_0003.jpg">
-                                      <span class="card-title"></span>
-                                    </div>
-                                    <div class="card-content">
-                                      <p>"The federal labor board ruled this week that employers can block workers from using email to organize, in a decision that companies, including Google, have asked for."</p>
-                                    </div>
-                                    <div class="article_content">
-                                      <p>{{content}}</p>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            </div>
+              <div class="card-content">
+                <p>{{discription}}</p>
+              </div>
+              <div class="article_content">
+                <!-- <p>{{{content.content}}}</p> -->
+              </div>
             </div>
-
-      <div id="footer"></div>
+          </div>
+      </div>
+      </div>
+      {{/each}}
     </script>
+
+    <script id="articleScrap-template" type="text/x-handlebars-template">
+      {{#each .}}
+      <div id="articleContainer">
+        <div class="row">
+            <div class="card">
+              <div class="card-image">
+                <img src={{lead_image_url}}>
+                <span class="card-title">{{title}}</span>
+              </div>
+              <div class="card-content">
+                <p>{{description}}</p>
+              </div>
+              <div class="article_content">
+                <!-- <p>{{content}}</p> -->
+              </div>
+            </div>
+          </div>
+      </div>
+      {{/each}}
+    </script>
+
+    <div id="append"></div>
+
+    <div id="footer"></div>
     <script src="/jquery/dist/jquery.js"></script>
     <script src="/handlebars/dist/handlebars.js"></script>
     <script src="Renderer.js"></script>
