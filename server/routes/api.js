@@ -33,7 +33,7 @@ router.post('/newsapi', async function(req, res) {
         author: a.author,
         title: a.title,
         domain: a.source.name,
-        description: a.description,
+        discription: a.description,
         lead_image_url: a.urlToImage,
         url: a.url,
         content: await Mercury.parse(a.url, { contentType: 'Markdown' }),
