@@ -49,7 +49,31 @@ router.post('/newsapi', function(req, res){
 
   request(url, function(err, response){
     let articleArrData = JSON.parse(response.body)
-    console.log(articleArrData)
+    console.log(articleArrData.articles)
+
+    articleArrData.articles.forEach(a => {
+      
+      let newApiArticle = new Article({
+        vertical: topic,
+        topic: null,
+        date_published: a.publishedAt,
+        author: a.author,
+        title: a.title,
+        content: a.content,
+        domain: a.source.name,
+        discription: a.description,
+        lead_image_url: a.urlToImage,
+        url: a.url,
+        word_count: null
+      });
+
+      newApiArticle.save()
+      console.log(newApiArticle)
+
+    });
+
+
+    
   })
 })
 
