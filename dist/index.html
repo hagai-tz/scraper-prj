@@ -29,29 +29,29 @@
 
     <div id="buttons">
       <a class="waves-effect waves-light btn-large z-depth-5 btn" id="business"
-        ><i class="material-icons left">business</i>Business</a
+        ><!-- <i class="material-icons left">business</i> -->Business</a
       >
       <a
         class="waves-effect waves-light btn-large z-depth-5 btn"
         id="entertainment"
-        ><i class="material-icons left">whatshot</i>Entertainment</a
+        ><!-- <i class="material-icons left">whatshot</i> -->Entertainment</a
       >
       <a class="waves-effect waves-light btn-large z-depth-5 btn" id="general"
-        ><i class="material-icons left">public</i>General</a
+        ><!-- <i class="material-icons left">public</i> -->General</a
       >
       <a class="waves-effect waves-light btn-large z-depth-5 btn" id="health"
-        ><i class="material-icons left">healing</i>Health</a
+        ><!-- <i class="material-icons left">healing</i> -->Health</a
       >
       <a class="waves-effect waves-light btn-large z-depth-5 btn" id="science"
-        ><i class="material-icons left"></i>Science</a
+        ><!-- <i class="material-icons left"></i> -->Science</a
       >
       <a
         class="waves-effect waves-light btn-large z-depth-5 btn"
         id="technology"
-        ><i class="material-icons left">computer</i>Technology</a
+        ><!-- <i class="material-icons left">computer</i> -->Technology</a
       >
       <a class="waves-effect waves-light btn-large z-depth-5" id="sports"
-        ><i class="material-icons left">sports</i>Sports</a
+        ><!-- <i class="material-icons left">sports</i> -->Sports</a
       >
     </div>
 
@@ -71,16 +71,15 @@
 
     <script id="article-template" type="text/x-handlebars-template">
       {{#each .}}
-      <div id="articleContainer">
-        <div class="row">
-          <div class="column">
+      <div class="column">
+      <div class="articleContainer" class="column col s12 m12 l6">
             <div class="card">
               <div class="card-image">
                 <img src={{lead_image_url}}>
                 <span class="card-title">{{title}}</span>
               </div>
               <div class="card-content">
-                <p>{{discription}}</p>
+                <span><p>{{discription}}</p></span>
               </div>
               <div class="article_content">
                 <!-- <p>{{{content.content}}}</p> -->
@@ -88,29 +87,30 @@
             </div>
           </div>
       </div>
-      </div>
       {{/each}}
     </script>
 
     <script id="articleScrap-template" type="text/x-handlebars-template">
-      {{#each .}}
-      <div id="articleContainer">
-        <div class="row">
-            <div class="card">
-              <div class="card-image">
-                <img src={{lead_image_url}}>
-                <span class="card-title">{{title}}</span>
-              </div>
-              <div class="card-content">
-                <p>{{description}}</p>
-              </div>
-              <div class="article_content">
-                <!-- <p>{{content}}</p> -->
+        {{#each .}}
+        <div class="column">
+        <div class="articleContainer" >
+            <div >
+              <div class="card">
+                <div class="card-image">
+                  <img src={{lead_image_url}}>
+                  <span class="card-title">{{title}}</span>
+                </div>
+                <div class="card-content">
+                  <span><p>{{description}}</p></span>
+                </div>
+                <div class="article_content">
+                  <!-- <p>{{content}}</p> -->
+                </div>
               </div>
             </div>
           </div>
       </div>
-      {{/each}}
+        {{/each}}
     </script>
 
     <div id="append"></div>

@@ -63,7 +63,7 @@ body {
 }
 
 .row:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -75,3 +75,8 @@ body {
     margin-bottom: 20px;
   }
 }
+
+/* .articleContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+} */
