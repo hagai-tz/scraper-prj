@@ -11,7 +11,6 @@ const linksScrapper = async function(sportSource){
     const browser = await puppeteer.launch({
         args: [
           '--no-sandbox',
-          '--disable-setuid-sandbox',
         ],
       })
       
