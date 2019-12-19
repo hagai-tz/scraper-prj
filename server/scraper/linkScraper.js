@@ -8,7 +8,13 @@ const linksScrapper = async function(sportSource){
 
     console.log(`opening headless chrome to scrap links`)
 
-    const browser = await puppeteer.launch()
+    const browser = await puppeteer.launch({
+        args: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+        ],
+      })
+      
     const page = await browser.newPage()
     await page.goto(sportSource.sportUrl, { waitUntil: 'networkidle2' })
     const html = await page.content()
