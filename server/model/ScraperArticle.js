@@ -6,7 +6,7 @@ const ScraperSchema = new Schema({
     vertical: String,
     topic: String,
     author: String,
-    content: String,
+    content: Array,
     date_published: String,
     domain: String,
     description: String,

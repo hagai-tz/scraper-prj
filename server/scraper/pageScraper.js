@@ -11,7 +11,6 @@ const pageScraper = async (articleUrl, magazine) => {
     const page = await browser.newPage();
     await page.goto(articleUrl);
     const html = await page.content()
-
     let $ = cheerio.load(html)
     
     let topic
@@ -19,11 +18,33 @@ const pageScraper = async (articleUrl, magazine) => {
     let date
     let bodyFull
     let bodyClean
-    let content
-    let imgSrc 
-    
+    let imgSrc
+    let contentStr 
+    let pArray=[]
+    let p
+    let pCount
+
     if (magazine == 'cnn') {
-      content = $('.zn-body__paragraph').text()
+      contentStr = $('.zn-body__paragraph').text()
+
+      pCount = $('#body-text > div.l-container > div.zn-body__paragraph').length
+      
+      for (let index = 0; index < pCount; index++) {
+        p = $(`#body-text > div.l-container > div:nth-child(${index})`).text()
+        pArray.push(p)
+      }
+
+      pCount = $('#body-text > div.l-container > div.zn-body__read-all > div').length
+      for (let index = 0; index < pCount; index++) {
+        p = $(`#body-text > div.l-container > div.zn-body__read-all > div:nth-child(${index})`).text()
+        pArray.push(p)
+
+        // if (!p.search('<img ')==-1) {
+        //   pArray.push(p)
+        // }
+      }
+
+      
       imgSrc = $('.media__image.media__image--responsive').attr('data-src-medium')
       topicTest = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container").text()
       topic = $("body > div.pg-right-rail-tall.pg-wrapper > article > div.l-container > h1").text()
@@ -41,13 +62,13 @@ const pageScraper = async (articleUrl, magazine) => {
           $('body > div.tpContainer').remove()
 
           if ($.html()) {
-            content = $.html()
+            contentStr = $.html()
           }else{
-            content = bodyFull
+            contentStr = bodyFull
           }
         }
 
-    str = content
+    str = contentStr
     str = str.replace(/(^\s*)|(\s*$)/gi,"")
     str = str.replace(/[ ]{2,}/gi," ")
     str = str.replace(/\n /,"\n")
@@ -57,7 +78,7 @@ const pageScraper = async (articleUrl, magazine) => {
         vertical: 'sport',
         topic: "",
         author: author,
-        content: content,
+        content: pArray,
         date_published: date,
         domain: "",
         description: "",
