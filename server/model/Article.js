@@ -19,7 +19,10 @@ const ArticleSchema = new Schema({
         word_count: Number,
 })
 
+ArticleSchema.index({ title: "text", discription: "text", author: "text", vertical: "text" });
 
+
+      
 
 
 // Collection
