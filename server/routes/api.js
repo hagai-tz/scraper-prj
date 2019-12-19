@@ -12,7 +12,10 @@ const mainScraper = require('../scraper/mainScraper');
 
 router.get('/articles/:vertical', async function(req, res) {
   let vertical = req.params.vertical;
+  console.log(vertical);
   let articlesArr = await Article.find({ vertical });
+  console.log(articlesArr.length);
+
   res.send(articlesArr);
 });
 
