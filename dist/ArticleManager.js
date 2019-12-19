@@ -13,4 +13,10 @@ class ArticleManager {
     let data = await $.get(`/scrap/sport`);
     return data;
   }
+
+  async getDataByKeyWord(keyWord) {
+    let data = await $.post(`/search?keyWord=${keyWord}`);
+    console.log(data);
+    return data;
+  }
 }
