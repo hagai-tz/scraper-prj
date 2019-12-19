@@ -15,8 +15,10 @@ app.use(express.static(path.join(__dirname, '..', 'node_modules')));
 
 app.use('/', api);
 
+const PORT = 9000
+app.listen(process.env.PORT || PORT);
 
-const port = process.env.PORT || 9000;
-app.listen(port, function() {
-  console.log(`Running on port ${port}`);
-});
+// const port = process.env.PORT || 9000;
+// app.listen(port, function() {
+//   console.log(`Running on port ${port}`);
+// });
