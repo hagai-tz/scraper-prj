@@ -19,14 +19,18 @@
   </head>
 
   <body>
+
+
     <nav>
       <div class="nav-wrapper black">
         <a class="brand-logo center"
-          ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a
-        >
-      </div>
-    </nav>
+          ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a>
 
+              <div class="search">
+                  <input id="search-input" type="text" placeholder="search for article">
+                  <button id="search-btn">SEARCH</button>
+              </div>
+    </nav>
     <div id="buttons">
       <a class="waves-effect waves-light btn-large z-depth-5 btn" id="business"
         ><!-- <i class="material-icons left">business</i> -->Business</a
@@ -56,33 +60,24 @@
     </div>
 
 
-      <div class="nav-wrapper black">
-        <a class="brand-logo center"
-          ><i class="material-icons right"> computer</i>Hackathon Scrapes!</a>
-      </div>
-    </nav>
-              <div class="search">
-                  <input id="search-input" type="text" placeholder="search for article">
-                  <button id="search-btn">SEARCH</button>
-              </div>
               
     <div id="buttons">
       <!-- <a class="waves-effect waves-light btn-large z-depth-5" id="business"></a> -->
 
     <script id="article-template" type="text/x-handlebars-template">
       {{#each .}}
-      <div class="column">
-      <div class="articleContainer" class="column col s12 m12 l6">
+      <div class="row">
+      <div class="articleContainer" class="column">
             <div class="card">
               <div class="card-image">
                 <img src={{lead_image_url}}>
                 <span class="card-title">{{title}}</span>
               </div>
               <div class="card-content">
-                <span><p>{{discription}}</p></span>
+                <span>{{description}}</span>
               </div>
-              <div class="article_content">
-                <!-- <p>{{{content.content}}}</p> -->
+              <div class="card-action">
+                <a href={{url}} class="waves-effect waves-light btn-large z-depth-5 btn">LINK TO THE ARTICLE</a>
               </div>
             </div>
           </div>
@@ -92,19 +87,19 @@
 
     <script id="articleScrap-template" type="text/x-handlebars-template">
         {{#each .}}
-        <div class="column">
-        <div class="articleContainer" >
+        <div class="row">
+        <div class="articleContainer" class="column">
             <div >
               <div class="card">
                 <div class="card-image">
                   <img src={{lead_image_url}}>
-                  <span class="card-title">{{title}}</span>
                 </div>
+                <span class="card-title">{{title}}</span>
                 <div class="card-content">
-                  <span><p>{{description}}</p></span>
+                  <p>{{description}}</p>
                 </div>
-                <div class="article_content">
-                  <!-- <p>{{content}}</p> -->
+                <div class="card-action">
+                  <a href={{url}} class="waves-effect waves-light btn-large z-depth-5 btn">LINK TO THE ARTICLE</a>
                 </div>
               </div>
             </div>

@@ -11,7 +11,7 @@ const ArticleSchema = new Schema({
         content: {},
         date_published: Date,
         domain: String,
-        discription: String,
+        description: String,
         lead_image_url: String,
         article_img_arr: Array,
         title: String,
