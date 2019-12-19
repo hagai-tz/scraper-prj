@@ -14,3 +14,8 @@ $('#sports').on('click', async function() {
   renderer.renderScrapData(x);
 });
 
+$('#search-btn').on('click', async function() {
+  let x = $('#search-input').val();
+  let y = await articleManager.getDataByKeyWord(x);
+  renderer.renderData(y);
+});

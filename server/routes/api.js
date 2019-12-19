@@ -24,11 +24,11 @@ router.get('/scrap/sport', async function(req, res) {
   res.send(articlesArr);
 });
 
-router.post('/newsapi', async function (req, res) {
+router.post('/newsapi', async function(req, res) {
   newsAPIKey = '0b8fc17ccb004aa0b44543dab7dbb353';
   let topic = req.query.q;
   let url = `https://newsapi.org/v2/top-headlines?country=us&category=${topic}&apiKey=${newsAPIKey}`;
-  request(url, async function (err, response) {
+  request(url, async function(err, response) {
     let articleArrData = JSON.parse(response.body);
     // console.log(articleArrData.articles);
 
@@ -50,54 +50,46 @@ router.post('/newsapi', async function (req, res) {
       newApiArticle.save();
       res.end();
     });
-
   });
 });
 
-
-
-
-
 //scraper
 
-
-const saveScraperToDb = async function () {
-
-  const articleArray = await mainScraper()
+const saveScraperToDb = async function() {
+  const articleArray = await mainScraper();
 
   articleArray.forEach(sa => {
+    articleArray.forEach(sa => {
+      let newApiArticle = new Scraper({
+        vertical: 'sport',
+        topic: null,
+        date_published: sa.date_published,
+        author: sa.author,
+        title: sa.title,
+        domain: null,
+        description: sa.description,
+        lead_image_url: sa.lead_image_url,
+        url: sa.url,
+        content: sa.content,
+        word_count: sa.word_count
+      });
+      newApiArticle.save();
+    });
+  });
+};
 
-  articleArray.forEach(sa => {
-    let newApiArticle = new Scraper({
-      vertical: 'sport',
-      topic: null,
-      date_published: sa.date_published,
-      author: sa.author,
-      title: sa.title,
-      domain: null,
-      description: sa.description,
-      lead_image_url: sa.lead_image_url,
-      url: sa.url,
-      content: sa.content,
-      word_count: sa.word_count,
+router.get('/scrap/', async function(req, res) {
+  let check = await saveScraperToDb();
+  res.end();
+});
 
-    })
-    newApiArticle.save()
-  })
-}
+router.post('/search', async function(req, res) {
+  let keyWord = req.query.keyWord;
+  let result = await Article.find(
+    { $text: { $search: `${keyWord}` } },
+    { score: { $meta: 'textScore' } }
+  ).sort({ score: { $meta: 'textScore' } });
+  res.send(result);
+});
 
-router.get('/scrap/', async function (req, res) {
-  let check = await saveScraperToDb()
-  res.end()
-})
-
-
-router.post('/search', async function (req, res) {
-  let keyWord = req.query.keyWord
-  let result = await Article.find({ $text: { $search: `${keyWord}` } }, { "score": { "$meta": "textScore" } }).sort({ "score": { "$meta": "textScore" } })
-      res.send(result)
-    })
-
-
-  module.exports = router
-
+module.exports = router;
